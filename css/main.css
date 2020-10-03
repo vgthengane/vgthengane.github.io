@@ -1,0 +1,92 @@
+
+
+ul.tabs-val {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+ul.interest {
+	list-style-type: square;
+}
+
+li.tabs {
+	float: right;
+}
+
+
+
+li a {
+	display: block;
+	color: blue;
+	text-align: center;
+	padding: 0px 30px;
+	text-decoration: none;
+}
+
+/* ----------------------*/
+
+a {
+	color: blue;
+}
+
+
+body {
+	font-family: Serif;
+	line-height:1.5;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	margin-right: 500px;
+	margin-left: 500px;
+	margin: 10px auto;
+}
+		
+h1 {
+	text-align: left;
+}
+
+div {
+	
+	margin: 10px auto;
+	width: 850px;
+}
+
+hr {
+	height: 2px;
+	color: #696969;
+	background-color: #696969;
+	border: none;
+	float: center;
+	width: 900px;
+	margin: 10px auto;
+}
+
+img {
+	border: 2px solid #111;
+	border-radius: 5px;
+	padding: 2px;
+	width: 200px;
+	border-radius: 50%;
+	float: right;
+}
+
+#bottom{
+	height: 1px;
+	color: #696969;
+	background-color: #696969;
+	border: none;
+	float: center;
+	width: 500px;
+	margin: 50px auto;
+}
+
+p.research {
+	text-align: justify;
+
+}
+
+h1.research {
+	line-height: 1.1;
+	font-size: 25px;
+}

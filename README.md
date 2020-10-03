@@ -1,2 +1,2 @@
-# vgthengane.github.io
-my personal site
+# vishalgt.github.io
+My personal website
