@@ -1,15 +1,49 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About Me"
+excerpt: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+I am currently a first-year PhD student at the University of Surrey, UK, focusing on leveraging foundational models for resource-efficient and data-efficient continual 3D world understanding. My research is conducted under the guidance of [Dr. Yunpeng Li]() and [Dr. Xiatian Zhu]().
 
-A data-driven personal website
+Before embarking on my PhD journey, I had the privilege of working at Mohammed Bin Zayed University of Artificial Intelligence (MBZUAI) in Abu Dhabi. Under the mentorship of [Dr. Salman Khan]() and [Dr. Fahad Khan](), my work centered on developing foundational models for continual learning and continual point cloud segmentation using indoor datasets. Prior to joining MBZUAI, I gained valuable experience as a freelancer, contributing to diverse projects across various disciplines in both research and industry. During this period, I also collaborated with esteemed institutions such as CERN, UIUC, and Cambridge University.
+
+My academic journey commenced with a bachelor's degree in Electronics and Telecommunication Engineering from Shri Guru Gobind Singh Institute of Engineering and Technology, Nanded (India). Notably, during my final year, I had the opportunity to spend six months at NTU Singapore, where I worked on Unsupervised Domain Adaptation for Night-Time Vehicle Classification under the guidance of [Dr. Meiqing Wu]() and [Dr. Lam Siew Kei]().
+
+## 🚀 News!
+**Sep 2023**: Embarked on PhD journey at University of Surrey 🎊. \\
+**Oct 2022**: 📢 New paper is out: [CLIP model is an Efficient Continual Learner](). \\
+**Aug 2022**: One paper on transformers for strong-lensing accepted at ECCV 2022 🎉. \\
+**Jun 2022**: Joined [MBZUAI]() as a Research Assistant under Dr. Salman Khan 🎉. \\
+**Jan 2021**: Got married to the love of my life 💍👰. \\
+**Jul 2020**: Started a new job as a product engineer at Smart AI Lab 🎉. \\
+**Mar 2020**: NTU full-time job offer was revoked due to the covid-19 pandemic 😞. \\
+**Jun 2019**: Started working as an freelancer 😊. \\
+**Jun 2019**: Received a full-time job offer from NTU Singapore 😊. \\
+**May 2019**: Graduated from SGGSIE&T with honors🎉. \\
+**Feb 2019**: Started thesis project at <u>NTU Singapore</u> 🎉. \\
+**Dec 2018**: Two papers were accepted at ICIIS 2018 🎉. \\
+**May 2018**: Started internship at Indian Institute of Technology, Ropar 🎉. \\
+**Aug 2015**: Started undergraduate in Electronics and Telecommunication Engineering 🥳.
+
+<!-- <div style="display: flex; justify-content: space-between; height: 55px;">
+  <img src='/images/uni_logos/surrey.png' alt='SURREY'>
+  <img src='/images/uni_logos/mbzuai.jpg' alt='MBZUAI'>
+  <img src='/images/uni_logos/cern.png' alt='CERN'>
+  <img src='/images/uni_logos/ntu.png' alt='NTU'>
+  <img src='/images/uni_logos/sggs.jpg' alt='SGGS'>
+</div> -->
+
+
+
+
+<!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
+
+<!-- A data-driven personal website
 ======
 Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
@@ -46,4 +80,4 @@ Example: editing a markdown file for a talk
 
 For more info
 ------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
