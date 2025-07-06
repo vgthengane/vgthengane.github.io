@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a first-year PhD student at the University of Surrey, UK, focusing on leveraging foundational models for resource-efficient and data-efficient continual 3D world understanding. My research is conducted under the guidance of [Dr. Yunpeng Li]() and [Dr. Xiatian Zhu]().
+I am currently a first-year PhD student at the University of Surrey, UK, focusing on leveraging foundational models for resource-efficient and data-efficient continual 3D world understanding. My research is conducted under the guidance of [Dr. Xiatian Zhu](https://x-up-lab.github.io/) and [Dr Lu Yin](https://luuyin.com/).
 
 Before embarking on my PhD journey, I had the privilege of working at Mohammed Bin Zayed University of Artificial Intelligence (MBZUAI) in Abu Dhabi. Under the mentorship of [Dr. Salman Khan]() and [Dr. Fahad Khan](), my work centered on developing foundational models for continual learning and continual point cloud segmentation using indoor datasets. Prior to joining MBZUAI, I gained valuable experience as a freelancer, contributing to diverse projects across various disciplines in both research and industry. During this period, I also collaborated with esteemed institutions such as CERN, UIUC, and Cambridge University.
 
