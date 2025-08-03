@@ -3,3 +3,9 @@ _site/
 
 # Ignore the Gemfile that is generated
 Gemfile.lock
+
+_site/
+push.sh
+.DS_Store
+NOTES.md
+Teaser_Figures.pptx
