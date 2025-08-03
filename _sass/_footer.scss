@@ -10,7 +10,7 @@
   width: 100%;
   clear: both;
   /* sticky footer fix start */
-  position: absolute;
+  position: relative;
   bottom: 0em;
   height: auto;
   /* sticky footer fix end */
@@ -22,7 +22,6 @@
           animation-delay: 0.45s;
   background-color: $lighter-gray;
   border-top: 1px solid $light-gray;
-  text-align: center;
 
   footer {
     @include clearfix;
@@ -90,4 +89,8 @@
       white-space: nowrap;
     }
   }
+}
+
+.footer-color {
+  color: $info-color;
 }

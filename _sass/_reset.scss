@@ -8,11 +8,11 @@ html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
   background-color: $background-color;
-  font-size: 16px;
+  font-size: 15px;
 
-  @include breakpoint($medium) {
-    font-size: 18px;
-  }
+  // @include breakpoint($medium) {
+  //   font-size: 18px;
+  // }
 
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -24,14 +24,16 @@ body { margin: 0; }
 
 /* Selected elements */
 
-::-moz-selection {
-  color: #fff;
-  background: #000;
+/* Make selected text semi-transparent with soft background */
+::selection {
+  background: rgba(147, 197, 253, 0.3); /* light blue, 30% opacity */
+  color: inherit; /* Keep the original text colour */
 }
 
-::selection {
-  color: #fff;
-  background: #000;
+/* For Firefox */
+::-moz-selection {
+  background: rgba(147, 197, 253, 0.3);
+  color: inherit;
 }
 
 /* Display HTML5 elements in IE6-9 and FF3 */

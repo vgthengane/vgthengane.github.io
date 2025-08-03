@@ -1,0 +1,79 @@
+<div class='paper-box' style="margin: 12px 0;">
+<div class='paper-box-image'>
+  <div>
+    <div class="badge">{{ include.venue }}</div>
+    <img src="{{ include.image | relative_url }}" alt="Paper image" width="100%">
+  </div>
+</div>
+
+<div class='paper-box-text' markdown="1" style="margin-top: 8px; margin-bottom: 10px;">
+
+[{{ include.title }}]({{ include.link }})
+
+{{ include.authors }}
+
+{% if include.citation %}
+<strong><span class='show_paper_citations' data='{{ include.citation }}'></span></strong>
+{% endif %}
+
+{% capture italic_desc %}
+    {{ include.description | markdownify }}
+  {% endcapture %}
+<div style="font-style: italic;">{{ italic_desc | strip }}</div>
+
+<!-- Buttons: font-size 80% only -->
+<div style="display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; align-items: center; font-size: 80%;">
+
+  {% if include.arxiv %}
+    <a href="{{ include.arxiv }}" target="_blank" style="background-color:rgba(22,163,74,0.2); color:#16a34a; padding:1px 6px; border-radius:6px; font-weight:500; text-decoration:none;">
+      <i class="ai ai-arxiv" style="margin-right:4px;"></i>arXiv
+    </a>
+  {% endif %}
+
+  {% if include.github %}
+    <a href="{{ include.github }}" target="_blank" style="background-color:rgba(30,41,59,0.2); color:#1e293b; padding:1px 6px; border-radius:6px; font-weight:500; text-decoration:none;">
+      <i class="fa-brands fa-github" style="margin-right:4px;"></i>GitHub
+    </a>
+  {% endif %}
+
+  {% if include.scholar %}
+    <a href="{{ include.scholar }}" target="_blank" style="background-color:rgba(75,85,99,0.2); color:#4b5563; padding:1px 6px; border-radius:6px; font-weight:500; text-decoration:none;">
+      <i class="ai ai-google-scholar" style="margin-right:4px;"></i>gScholar
+    </a>
+  {% endif %}
+
+  {% if include.project %}
+    <a href="{{ include.project }}" target="_blank" style="background-color:rgba(37,99,235,0.2); color:#2563eb; padding:1px 6px; border-radius:6px; font-weight:500; text-decoration:none;">
+      <i class="fa-solid fa-link" style="margin-right:4px;"></i>ProjectPage
+    </a>
+  {% endif %}
+
+  {% if include.youtube %}
+    <a href="{{ include.youtube }}" target="_blank" style="background-color:rgba(220,38,38,0.2); color:#dc2626; padding:1px 6px; border-radius:6px; font-weight:500; text-decoration:none;">
+      <i class="fab fa-youtube" style="margin-right:4px;"></i>YouTube
+    </a>
+  {% endif %}
+
+  {% if include.colab %}
+    <a href="{{ include.colab }}" target="_blank" style="background-color:rgba(251,146,60,0.2); color:#fb923c; padding:1px 6px; border-radius:6px; font-weight:500; text-decoration:none;">
+      <i class="fa fa-flask" style="margin-right:4px;"></i>Colab
+    </a>
+  {% endif %}
+
+  <!-- {% if include.license %}
+  <span style="background-color:rgba(163,230,53,0.2); color:#65a30d; padding:2px 10px; border-radius:6px; font-weight:500; display: inline-flex; align-items: center; gap: 6px; font-size: 90%;">
+    <i class="fa-sharp fa-solid fa-file-certificate"></i> {{ include.license }}
+  </span>
+  {% endif %} -->
+
+  {% if include.huggingface %}
+  <a href="{{ include.huggingface }}" target="_blank"
+      style="background-color:rgba(255, 215, 0, 0.2); color:#c2410c; padding:2px 10px; border-radius:6px; font-weight:500; text-decoration:none; display:inline-flex; align-items:center; gap:6px; font-size:90%;">
+      <img src="{{ '/images/hf-logo.svg' | relative_url }}" alt="Hugging Face Icon" width="16" height="16" />
+      HuggingFace
+  </a>
+  {% endif %}
+
+</div>
+</div>
+</div>

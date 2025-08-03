@@ -1,83 +1,22 @@
----
-permalink: /
-title: "About Me"
-excerpt: "About Me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
----
+<span class='anchor' id='about-me'></span>
 
-I am currently a first-year PhD student at the University of Surrey, UK, focusing on leveraging foundational models for resource-efficient and data-efficient continual 3D world understanding. My research is conducted under the guidance of [Dr. Xiatian Zhu](https://x-up-lab.github.io/) and [Dr Lu Yin](https://luuyin.com/).
+# 👋 Hi there! Welcome to my website ✨
 
-Before embarking on my PhD journey, I had the privilege of working at Mohammed Bin Zayed University of Artificial Intelligence (MBZUAI) in Abu Dhabi. Under the mentorship of [Dr. Salman Khan]() and [Dr. Fahad Khan](), my work centered on developing foundational models for continual learning and continual point cloud segmentation using indoor datasets. Prior to joining MBZUAI, I gained valuable experience as a freelancer, contributing to diverse projects across various disciplines in both research and industry. During this period, I also collaborated with esteemed institutions such as CERN, UIUC, and Cambridge University.
+I am a second-year joint PhD student at the [University of Surrey](https://www.surrey.ac.uk/) (UoS), United Kingdom, and the [University of Wollongong](https://www.uow.edu.au/) (UoW), Australia, focusing on resource- and data-efficient methods for 3D scene understanding. My research is supervised by [Xiatian Zhu](https://x-up-lab.github.io/) and [Lu Yin](https://luuyin.com/) at UoS, and by [Salim Bouzerdoum](https://scholars.uow.edu.au/a-bouzerdoum) and [Son Lam Phung](https://documents.uow.edu.au/~phung) at UoW.
 
-My academic journey commenced with a bachelor's degree in Electronics and Telecommunication Engineering from Shri Guru Gobind Singh Institute of Engineering and Technology, Nanded (India). Notably, during my final year, I had the opportunity to spend six months at NTU Singapore, where I worked on Unsupervised Domain Adaptation for Night-Time Vehicle Classification under the guidance of [Dr. Meiqing Wu]() and [Dr. Lam Siew Kei]().
+Before embarking on my PhD journey, I had the privilege of working at [Mohammed Bin Zayed University of Artificial Intelligence](https://mbzuai.ac.ae/) in Abu Dhabi, where I was fortunate to collaborate with [Salman Khan]() and [Fahad Khan]() on developing foundational models for continual learning and continual point cloud segmentation using indoor datasets. Prior to joining MBZUAI, I gained valuable experience as a freelancer, contributing to diverse projects across research and industry. During this period, I also collaborated with esteemed institutions such as CERN, UIUC, and the University of Cambridge.
 
-## 🚀 News!
-**Sep 2023**: Embarked on PhD journey at University of Surrey 🎊. \\
-**Oct 2022**: 📢 New paper is out: [CLIP model is an Efficient Continual Learner](). \\
-**Aug 2022**: One paper on transformers for strong-lensing accepted at ECCV 2022 🎉. \\
-**Jun 2022**: Joined [MBZUAI]() as a Research Assistant under Dr. Salman Khan 🎉. \\
-**Jan 2021**: Got married to the love of my life 💍👰. \\
-**Jul 2020**: Started a new job as a product engineer at Smart AI Lab 🎉. \\
-**Mar 2020**: NTU full-time job offer was revoked due to the covid-19 pandemic 😞. \\
-**Jun 2019**: Started working as an freelancer 😊. \\
-**Jun 2019**: Received a full-time job offer from NTU Singapore 😊. \\
-**May 2019**: Graduated from SGGSIE&T with honors🎉. \\
-**Feb 2019**: Started thesis project at <u>NTU Singapore</u> 🎉. \\
-**Dec 2018**: Two papers were accepted at ICIIS 2018 🎉. \\
-**May 2018**: Started internship at Indian Institute of Technology, Ropar 🎉. \\
-**Aug 2015**: Started undergraduate in Electronics and Telecommunication Engineering 🥳.
+I completed my bachelor's degree in Electronics and Telecommunication Engineering from [SGGS Institute of Engineering and Technology Nanded](https://www.sggs.ac.in/) in India. As part of my undergraduate programme, I had the incredible opportunity to spend six months at [Nanyang Technological University](https://www.ntu.edu.sg/) (NTU), Singapore, where I worked with [Meiqing Wu](https://openreview.net/profile?id=~Meiqing_Wu1) and [Lam Siew Kei](https://siewkeilam.github.io/ei-research-group/index.html) on unsupervised domain adaptation for autonomous driving applications.
 
-<!-- <div style="display: flex; justify-content: space-between; height: 55px;">
-  <img src='/images/uni_logos/surrey.png' alt='SURREY'>
-  <img src='/images/uni_logos/mbzuai.jpg' alt='MBZUAI'>
-  <img src='/images/uni_logos/cern.png' alt='CERN'>
-  <img src='/images/uni_logos/ntu.png' alt='NTU'>
-  <img src='/images/uni_logos/sggs.jpg' alt='SGGS'>
-</div> -->
+<!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
-
-
-
-<!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
-
-<!-- A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
-
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
-
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
-
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
+<div class="logo-row">
+  <img src="/images/uni_logos/surrey.png" alt="University of Surrey" />
+  <img src="/images/uni_logos/uow.png" alt="University of Wollongong" />
+  <img src="/images/uni_logos/mbzuai.jpg" alt="MBZUAI" />
+  <img src="/images/uni_logos/ntu.png" alt="NTU Singapore" />
+  <img src="/images/uni_logos/cern.png" alt="CERN" />
+  <img src="/images/uni_logos/sggs.jpg" alt="SGGS" />
+  <!-- <img src="/images/uni_logos/uiuc.png" alt="UIUC" /> -->
+  <!-- <img src="/images/uni_logos/cambridge.png" alt="University of Cambridge" /> -->
+</div>
