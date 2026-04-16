@@ -131,6 +131,13 @@
   }
 }
 
+.page__content .paper-link,
+.page__content .paper-link:hover,
+.page__content .paper-link:focus,
+.page__content .paper-link:active {
+  text-decoration: none;
+}
+
 .paper-link--arxiv {
   background-color: rgba(22, 163, 74, 0.16);
   color: #15803d;
