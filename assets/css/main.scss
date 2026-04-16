@@ -62,7 +62,7 @@
         img {
         max-width: 400px;
         box-shadow: 0 16px 34px rgba(24, 34, 45, 0.12);
-        border-radius: 1rem;
+        border-radius: 0.7rem;
             object-fit: cover;
         }
     }
@@ -187,9 +187,9 @@ max-width: 780px;
 }
 
 .paper-link--project {
-  border-color: #0891b2;
+  border-color: #c2410d;
   i {
-    color: #0891b2;
+    color: #c2410d;
   }
 }
 
@@ -201,9 +201,9 @@ max-width: 780px;
 }
 
 .paper-link--demo {
-  border-color: #0891b2;
+  border-color: #c2410d;
   i {
-    color: #0891b2;
+    color: #c2410d;
   }
 }
 
@@ -528,7 +528,7 @@ h1:before, .anchor:before {
   }
 
   .fa-arrow-up-right-from-square {
-    color: #c2410c;
+    color: #c2410d;
   }
 
   &:hover {
@@ -596,14 +596,14 @@ h1:before, .anchor:before {
 }
 
 .project-link-card--demo {
-  border-color: #0891b2;
+  border-color: #c2410d;
 
   .fa-arrow-up-right-from-square {
-    color: #0891b2;
+    color: #c2410d;
   }
 
   &:hover {
-    border-color: #0891b2;
+    border-color: #c2410d;
   }
 }
 
