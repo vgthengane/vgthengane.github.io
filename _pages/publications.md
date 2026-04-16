@@ -10,7 +10,7 @@ A full publication list is available on my [Google Scholar](https://scholar.goog
    authors="<strong>Vishal Thengane</strong>, Jean Lahoud, Hisham Cholakkal, Rao Muhammad Anwer, Lu Yin, Xiatian Zhu, Salman Khan"
    arxiv="https://arxiv.org/abs/2502.17429"
    github="https://github.com/vgthengane/CLIMB3D"
-   project="https://github.com/vgthengane/CLIMB3D"
+   project="/climb3d"
    description="
 We introduce class-incremental learning for point cloud instance segmentation and curate benchmarks from the long-tail ScanNet200 dataset. To address class imbalance, we propose a novel module that ensures more uniform performance across frequent and rare classes.
 "

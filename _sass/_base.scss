@@ -16,6 +16,9 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 0em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   color: $text-color;
   font-family: $global-font-family;
   font-size: $doc-font-size * 1px; 

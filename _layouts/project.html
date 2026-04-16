@@ -1,0 +1,65 @@
+---
+layout: compress
+---
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="project-only-page">
+    {% include browser-upgrade.html %}
+
+    <div id="main" role="main">
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            {{ content }}
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <script>
+      document.addEventListener('click', async function (event) {
+        var button = event.target.closest('.project-bibtex-copy');
+        if (!button) {
+          return;
+        }
+
+        var section = button.closest('.project-bibtex-section');
+        var codeBlock = section && section.querySelector('.project-bibtex');
+        if (!codeBlock) {
+          return;
+        }
+
+        var text = codeBlock.textContent.replace(/^\s+|\s+$/g, '');
+
+        try {
+          await navigator.clipboard.writeText(text);
+          button.classList.add('is-copied');
+          button.setAttribute('aria-label', 'BibTeX copied');
+          button.innerHTML = '<i class="fa-solid fa-check"></i><span>Copied</span>';
+
+          window.setTimeout(function () {
+            button.classList.remove('is-copied');
+            button.setAttribute('aria-label', 'Copy BibTeX');
+            button.innerHTML = '<i class="fa-regular fa-copy"></i><span>Copy</span>';
+          }, 1600);
+        } catch (error) {
+          button.classList.add('is-copied');
+          button.setAttribute('aria-label', 'Copy failed');
+          window.setTimeout(function () {
+            button.classList.remove('is-copied');
+            button.setAttribute('aria-label', 'Copy BibTeX');
+          }, 1600);
+        }
+      });
+    </script>
+
+    {% include scripts.html %}
+  </body>
+</html>

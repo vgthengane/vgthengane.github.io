@@ -228,10 +228,10 @@
     a {
       position: relative;
       padding: 0.55rem 0.15rem;
-      border-radius: 999px;
+      border-radius: 0;
 
       &:hover {
-        background: rgba(76, 143, 190, 0.1);
+        background: transparent;
       }
 
       &:before {
