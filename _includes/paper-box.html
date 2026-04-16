@@ -23,15 +23,22 @@
 
 <div class="paper-links">
 
-  {% if include.arxiv and include.arxiv != "" %}
-    <a href="{{ include.arxiv }}" class="paper-link paper-link--arxiv">
-      <i class="ai ai-arxiv"></i>arXiv
+  {% if include.link and include.link != "" %}
+    <a href="{{ include.link }}" class="paper-link paper-link--arxiv">
+      <i class="fa-solid fa-file-lines"></i>Paper
     </a>
   {% endif %}
 
-  {% if include.github and include.github != "" %}
-    <a href="{{ include.github }}" class="paper-link paper-link--github">
-      <i class="fa-brands fa-github"></i>GitHub
+  {% if include.arxiv and include.arxiv != "" %}
+    <a href="{{ include.arxiv }}" class="paper-link paper-link--archive">
+      <img src="{{ '/images/arxiv-logo.png' | relative_url }}" alt="ArXiv" width="14" height="14" />
+      ArXiv
+    </a>
+  {% endif %}
+
+  {% if include.code and include.code != "" %}
+    <a href="{{ include.code }}" class="paper-link paper-link--code">
+      <i class="fa-solid fa-code"></i>Code
     </a>
   {% endif %}
 
@@ -43,7 +50,7 @@
 
   {% if include.project and include.project != "" %}
     <a href="{{ include.project }}" class="paper-link paper-link--project">
-      <i class="fa-solid fa-link"></i>Project
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>Demo
     </a>
   {% endif %}
 
@@ -55,7 +62,7 @@
 
   {% if include.demo and include.demo != "" %}
     <a href="{{ include.demo }}" class="paper-link paper-link--demo">
-      <i class="fa-solid fa-play"></i>Demo
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>Demo
     </a>
   {% endif %}
 

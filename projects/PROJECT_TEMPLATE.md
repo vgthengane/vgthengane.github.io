@@ -22,7 +22,6 @@ publication_description: "2-3 sentence short intro shown in Publications page."
 
 paper_url: "https://arxiv.org/abs/xxxx.xxxxx"
 arxiv_url: "https://arxiv.org/abs/xxxx.xxxxx"
-github_url: "https://github.com/owner/repo"
 youtube_url: "https://youtube.com/..."
 code_url: "https://github.com/owner/repo"
 demo_url: "https://project-page-url"

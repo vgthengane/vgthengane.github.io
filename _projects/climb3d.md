@@ -5,7 +5,7 @@ permalink: /climb3d
 show_in_publications: true
 publication_section: featured
 publication_show_project_link: true
-number: 1
+number: 5
 
 year: 2025
 venue: "BMVC 2025"
@@ -21,9 +21,8 @@ tags:
 
 paper_url: "https://arxiv.org/pdf/2502.17429.pdf"
 arxiv_url: "https://arxiv.org/abs/2502.17429"
-github_url: "https://github.com/vgthengane/CLIMB3D"
-youtube_url: ""
 code_url: "https://github.com/vgthengane/CLIMB3D"
+youtube_url: ""
 
 short_intro: "We introduce class-incremental learning for point cloud instance segmentation and curate benchmarks from the long-tail ScanNet200 dataset. To address class imbalance, we propose a novel module that ensures more uniform performance across frequent and rare classes."
 

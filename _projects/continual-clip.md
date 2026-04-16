@@ -4,7 +4,7 @@ title: "CLIP Model is an Efficient Continual Learner"
 permalink: /continual-clip
 show_in_publications: true
 publication_section: publication
-publication_show_project_link: true
+publication_show_project_link: false
 number: 2
 
 year: 2023
@@ -20,7 +20,6 @@ tags:
 
 paper_url: "https://sites.google.com/view/clvision2023/call-for-papers/accepted-papers"
 arxiv_url: "https://arxiv.org/abs/2210.03114"
-github_url: "https://github.com/vgthengane/Continual-CLIP"
 youtube_url: ""
 code_url: "https://github.com/vgthengane/Continual-CLIP"
 

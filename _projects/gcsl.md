@@ -5,7 +5,7 @@ permalink: /gcsl
 show_in_publications: true
 publication_section: preprint
 publication_show_project_link: false
-number: 4
+number: 3
 
 year: 2024
 venue: "Arxiv 2024"
@@ -20,7 +20,6 @@ tags:
 
 paper_url: "https://arxiv.org/abs/2403.02334"
 arxiv_url: "https://arxiv.org/abs/2403.02334"
-github_url: "https://github.com/vgthengane/GCSL"
 youtube_url: ""
 code_url: "https://github.com/vgthengane/GCSL"
 

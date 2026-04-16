@@ -26,10 +26,11 @@ layout: compress
                 {% if page.contact_email %}<p class="project-email">{{ page.contact_email }}</p>{% endif %}
 
                 <div class="project-links-grid">
-                  {% if page.paper_url and page.paper_url != "" %}<a class="project-link-card" href="{{ page.paper_url }}"><i class="fa-solid fa-file-lines"></i>Paper</a>{% endif %}
-                  {% if page.youtube_url and page.youtube_url != "" %}<a class="project-link-card" href="{{ page.youtube_url }}"><i class="fa-brands fa-youtube"></i>YouTube</a>{% endif %}
-                  {% if page.code_url and page.code_url != "" %}<a class="project-link-card" href="{{ page.code_url }}"><i class="fa-solid fa-code"></i>Code</a>{% endif %}
-                  {% if page.demo_url and page.demo_url != "" %}<a class="project-link-card" href="{{ page.demo_url }}"><i class="fa-solid fa-arrow-up-right-from-square"></i>Demo</a>{% endif %}
+                  {% if page.paper_url and page.paper_url != "" %}<a class="project-link-card project-link-card--paper" href="{{ page.paper_url }}"><i class="fa-solid fa-file-lines"></i>Paper</a>{% endif %}
+                  {% if page.arxiv_url and page.arxiv_url != "" %}<a class="project-link-card project-link-card--archive" href="{{ page.arxiv_url }}"><img src="{{ '/images/arxiv-logo.png' | relative_url }}" alt="ArXiv" width="14" height="14" />ArXiv</a>{% endif %}
+                  {% if page.youtube_url and page.youtube_url != "" %}<a class="project-link-card project-link-card--youtube" href="{{ page.youtube_url }}"><i class="fa-brands fa-youtube"></i>YouTube</a>{% endif %}
+                  {% if page.code_url and page.code_url != "" %}<a class="project-link-card project-link-card--code" href="{{ page.code_url }}"><i class="fa-solid fa-code"></i>Code</a>{% endif %}
+                  {% if page.demo_url and page.demo_url != "" %}<a class="project-link-card project-link-card--demo" href="{{ page.demo_url }}"><i class="fa-solid fa-arrow-up-right-from-square"></i>Demo</a>{% endif %}
                 </div>
               </div>
 

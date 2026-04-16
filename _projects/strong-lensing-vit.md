@@ -5,7 +5,7 @@ permalink: /strong-lensing-vit
 show_in_publications: true
 publication_section: publication
 publication_show_project_link: false
-number: 5
+number: 1
 
 year: 2022
 venue: "ECCV 2022"
@@ -20,7 +20,6 @@ tags:
 
 paper_url: "https://link.springer.com/chapter/10.1007/978-3-031-25056-9_10"
 arxiv_url: "https://arxiv.org/abs/2210.04143"
-github_url: "https://github.com/kuanweih/strong_lensing_vit_resnet"
 youtube_url: ""
 code_url: "https://github.com/kuanweih/strong_lensing_vit_resnet"
 

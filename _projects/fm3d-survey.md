@@ -5,7 +5,7 @@ permalink: /fm3d-survey
 show_in_publications: true
 publication_section: preprint
 publication_show_project_link: false
-number: 3
+number: 4
 
 year: 2025
 venue: "Arxiv 2025"
@@ -20,7 +20,6 @@ tags:
 
 paper_url: "https://arxiv.org/abs/2501.18594"
 arxiv_url: "https://arxiv.org/abs/2501.18594"
-github_url: "https://github.com/vgthengane/Awesome-FMs-in-3D"
 youtube_url: ""
 code_url: "https://github.com/vgthengane/Awesome-FMs-in-3D"
 
