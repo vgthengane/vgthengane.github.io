@@ -10,7 +10,7 @@ I am a joint PhD student at the [University of Surrey](https://www.surrey.ac.uk/
 
 Before embarking on my PhD journey, I worked at [MBZUAI](https://mbzuai.ac.ae/) in Abu Dhabi, where I collaborated with [Salman Khan](https://salman-h-khan.github.io) and [Fahad Khan](https://scholar.google.com/citations?user=zvaeYnUAAAAJ&hl=en) on utilising foundational models for continual learning in image and point cloud understanding.
 
-I completed my undergraduate studies at [SGGS Institute of Engineering and Technology, Nanded](https://www.sggs.ac.in/) in India. As part of my undergraduate programme, I had the opportunity to spend six months at [Nanyang Technological University](https://www.ntu.edu.sg/) (NTU), Singapore.
+I completed my undergraduate studies at [SGGS Institute of Engineering and Technology, Nanded](https://www.sggs.ac.in/) in India. During my undergrad, I had the opportunity to spend six months at [Nanyang Technological University](https://www.ntu.edu.sg/) (NTU), Singapore.
 
 
 My research interests include:
