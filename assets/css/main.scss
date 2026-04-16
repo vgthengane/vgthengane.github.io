@@ -55,6 +55,9 @@
         display: flex;
         width: 100%;
         order: 2;
+      > div {
+        position: relative;
+      }
         img {
             max-width: 400px;
         box-shadow: 0 16px 34px rgba(24, 34, 45, 0.12);
@@ -97,14 +100,34 @@ h1:before, .anchor:before {
 }
 
 .badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  position: absolute;
+  top: 0.85rem;
+  left: -0.35rem;
+  padding: 0.28rem 0.95rem 0.3rem 1rem;
+  border-radius: 0 0.35rem 0.35rem 0;
+  border: 0;
+  box-shadow: 0 10px 20px rgba(24, 34, 45, 0.2);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  margin: 0;
+  z-index: 2;
+  color: #fff;
+  background: linear-gradient(90deg, #ff8d70, #f26f57);
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  text-transform: none;
+
+  &::before {
+    content: "";
     position: absolute;
-    margin-top: .5em;
-    margin-left: -.5em;
-    color: white;
-    background-color: $info-color;
-    font-size: .8em;
+    left: 0;
+    bottom: -0.35rem;
+    border-top: 0.35rem solid mix(#000, $info-color, 30%);
+    border-left: 0.35rem solid transparent;
+  }
+
 }
 
 .logo-row {
