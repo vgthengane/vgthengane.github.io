@@ -1,0 +1,131 @@
+---
+layout: compress
+---
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="project-only-page">
+    {% include browser-upgrade.html %}
+
+    <div id="main" role="main">
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            <div class="project-hero">
+              <div class="project-header-center">
+                <h1 class="project-title">{{ page.title }}</h1>
+                {% if page.venue %}<p class="project-conference">{{ page.venue }}</p>{% endif %}
+                {% if page.authors %}<p class="project-authors">{{ page.authors }}</p>{% endif %}
+                {% if page.affiliation %}<p class="project-affiliation">{{ page.affiliation }}</p>{% endif %}
+                {% if page.contact_email %}<p class="project-email">{{ page.contact_email }}</p>{% endif %}
+
+                <div class="project-links-grid">
+                  {% if page.paper_url and page.paper_url != "" %}<a class="project-link-card" href="{{ page.paper_url }}"><i class="fa-solid fa-file-lines"></i>Paper</a>{% endif %}
+                  {% if page.youtube_url and page.youtube_url != "" %}<a class="project-link-card" href="{{ page.youtube_url }}"><i class="fa-brands fa-youtube"></i>YouTube</a>{% endif %}
+                  {% if page.code_url and page.code_url != "" %}<a class="project-link-card" href="{{ page.code_url }}"><i class="fa-solid fa-code"></i>Code</a>{% endif %}
+                  {% if page.demo_url and page.demo_url != "" %}<a class="project-link-card" href="{{ page.demo_url }}"><i class="fa-solid fa-arrow-up-right-from-square"></i>Demo</a>{% endif %}
+                </div>
+              </div>
+
+              {% if page.teaser_image %}
+              <figure class="project-cover">
+                <img src="{{ page.teaser_image | relative_url }}" alt="{{ page.title }} teaser">
+              </figure>
+              {% endif %}
+
+              {% if page.tags and page.tags.size > 0 %}
+              <span class="project-tags">
+                {% for tag in page.tags %}
+                <span class="project-tag">{{ tag }}</span>
+                {% endfor %}
+              </span>
+              {% endif %}
+            </div>
+
+            {% if page.abstract %}
+            <section class="project-section">
+              <h2>Abstract</h2>
+              <p class="project-abstract">{{ page.abstract }}</p>
+            </section>
+            {% endif %}
+
+            {% if page.method %}
+            <section class="project-section">
+              <h2>Method</h2>
+              <p class="project-method">{{ page.method }}</p>
+            </section>
+            {% endif %}
+
+            {% if page.results %}
+            <section class="project-section">
+              <h2>Results</h2>
+              <p class="project-results">{{ page.results }}</p>
+            </section>
+            {% endif %}
+
+            {% if page.bibtex %}
+            <section class="project-section project-bibtex-section">
+              <h2>BibTeX</h2>
+              <div class="project-bibtex-block">
+                <div class="project-bibtex-block-header">
+                  <button class="project-bibtex-copy" type="button" aria-label="Copy BibTeX">
+                    <i class="fa-regular fa-copy"></i><span>Copy</span>
+                  </button>
+                </div>
+                <pre class="project-bibtex">{{ page.bibtex }}</pre>
+              </div>
+            </section>
+            {% endif %}
+
+            {{ content }}
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <script>
+      document.addEventListener('click', async function (event) {
+        var button = event.target.closest('.project-bibtex-copy');
+        if (!button) {
+          return;
+        }
+
+        var section = button.closest('.project-bibtex-section');
+        var codeBlock = section && section.querySelector('.project-bibtex');
+        if (!codeBlock) {
+          return;
+        }
+
+        var text = codeBlock.textContent.replace(/^\s+|\s+$/g, '');
+
+        try {
+          await navigator.clipboard.writeText(text);
+          button.classList.add('is-copied');
+          button.setAttribute('aria-label', 'BibTeX copied');
+          button.innerHTML = '<i class="fa-solid fa-check"></i><span>Copied</span>';
+
+          window.setTimeout(function () {
+            button.classList.remove('is-copied');
+            button.setAttribute('aria-label', 'Copy BibTeX');
+            button.innerHTML = '<i class="fa-regular fa-copy"></i><span>Copy</span>';
+          }, 1600);
+        } catch (error) {
+          button.classList.add('is-copied');
+          button.setAttribute('aria-label', 'Copy failed');
+          window.setTimeout(function () {
+            button.classList.remove('is-copied');
+            button.setAttribute('aria-label', 'Copy BibTeX');
+          }, 1600);
+        }
+      });
+    </script>
+
+    {% include scripts.html %}
+  </body>
+</html>
