@@ -102,6 +102,10 @@
     }
 }
 
+.page__content > .paper-box:last-of-type {
+  border-bottom: 0;
+}
+
 .paper-desc {
   margin-top: 0.3rem;
   color: mix(#fff, $text-color, 12%);
