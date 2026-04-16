@@ -194,12 +194,13 @@
     height: 100%;
     right: 0;
     padding: 0 0.5rem;
-    border: 0;
+    border: 1px solid rgba(76, 143, 190, 0.32);
     outline: none;
-    background-color: rgba(47, 111, 146, 0.9);
-    color: #fff;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.96), rgba(76, 143, 190, 0.16));
+    color: mix($info-color, $heading-color, 72%);
     cursor: pointer;
     border-radius: 999px;
+    box-shadow: 0 8px 18px rgba(76, 143, 190, 0.14);
   }
 
   .visible-links {
@@ -229,6 +230,10 @@
       padding: 0.55rem 0.15rem;
       border-radius: 999px;
 
+      &:hover {
+        background: rgba(76, 143, 190, 0.1);
+      }
+
       &:before {
         content: "";
         position: absolute;
@@ -236,7 +241,7 @@
         bottom: 0.2rem;
         height: 2px;
         border-radius: 999px;
-        background: linear-gradient(90deg, $primary-color, $info-color);
+        background: linear-gradient(90deg, mix(#fff, $primary-color, 16%), mix(#fff, $info-color, 10%));
         width: calc(100% - 0.3rem);
         -webkit-transition: $global-transition;
         transition: $global-transition;
@@ -261,7 +266,7 @@
     padding: 5px;
     border: 1px solid $border-color;
     border-radius: $border-radius;
-    background: rgba(255, 255, 255, 0.97);
+    background: rgba(255, 251, 246, 0.98);
     box-shadow: 0 18px 34px rgba(24, 34, 45, 0.12);
 
     a {
@@ -272,7 +277,7 @@
 
       &:hover {
         color: $masthead-link-color-hover;
-        background: rgba(255, 125, 99, 0.08);
+        background: rgba(76, 143, 190, 0.1);
       }
     }
 

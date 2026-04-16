@@ -29,7 +29,7 @@ $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
 $global-font-family         : $sans-serif;
-$header-font-family         : $serif;
+$header-font-family         : $sans-serif;
 $caption-font-family        : $sans-serif;
 
 /* type scale */
@@ -95,8 +95,8 @@ $xing-color                 : #006567;
 $link-color                 : #2f6f92;
 $link-color-hover           : mix(#000, $link-color, 18%);
 $link-color-visited         : mix(#fff, $link-color, 18%);
-$masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$masthead-link-color        : mix($info-color, $heading-color, 64%);
+$masthead-link-color-hover  : mix($primary-color, $info-color, 44%);
 
 
 /*

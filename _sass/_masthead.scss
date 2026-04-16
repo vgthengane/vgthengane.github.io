@@ -71,6 +71,6 @@
 .masthead__menu-home-item a {
   font-size: 1.2rem;  // Increase or adjust size as needed
   font-weight: 700;   // Makes it bold
-  color: $heading-color;
+  color: mix($primary-color, $heading-color, 52%);
   letter-spacing: -0.02em;
 }
