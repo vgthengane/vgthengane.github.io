@@ -1,5 +1,5 @@
 <h1 align="center">
-Vishal Thengane – Academic Homepage
+Vishal Thengane - Academic Homepage
 </h1>
 
 <p align="center">
