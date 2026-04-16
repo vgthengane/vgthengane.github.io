@@ -5,6 +5,11 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(255, 125, 99, 0.16), transparent 30%),
+    radial-gradient(circle at top right, rgba(76, 143, 190, 0.14), transparent 28%),
+    radial-gradient(circle at 70% 18%, rgba(255, 210, 168, 0.16), transparent 22%),
+    linear-gradient(180deg, #fffdf9 0%, #fff7ef 100%);
 }
 
 body {
@@ -14,9 +19,10 @@ body {
   color: $text-color;
   font-family: $global-font-family;
   font-size: $doc-font-size * 1px; 
-  line-height: 1.4;
-  letter-spacing: 0.02em;     // open spacing
-  word-spacing: 0.1em;        // more space between words
+  line-height: 1.65;
+  letter-spacing: 0.005em;
+  word-spacing: 0.02em;
+  background: transparent;
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
@@ -24,16 +30,18 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 1.2em 0 0.6em;
-  line-height: 1.2;
+  margin: 1.35em 0 0.6em;
+  line-height: 1.15;
   font-family: $header-font-family;
-  font-weight: bold;
+  font-weight: 600;
+  color: $heading-color;
 }
 
 h1 {
   // margin: 4em 0 0.5em;
   margin-top: 1em;
   font-size: $type-size-3;
+  letter-spacing: -0.02em;
 }
 
 h2 {
@@ -61,7 +69,7 @@ small, .small {
 }
 
 p {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.95em;
 }
 
 u,
@@ -120,6 +128,10 @@ blockquote {
 /* links */
 
 a {
+  color: $link-color;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+  transition: color 180ms ease, text-decoration-color 180ms ease;
   
   &:focus {
     @extend %tab-focus;
@@ -128,7 +140,13 @@ a {
   &:hover,
   &:active {
     outline: 0;
+    color: $link-color-hover;
   }
+}
+
+::selection {
+  background: rgba(255, 125, 99, 0.18);
+  color: $heading-color;
 }
 
 /* code */
@@ -164,7 +182,7 @@ td > code {
 
 hr {
   display: block;
-  margin: 1em 0;
+  margin: 1.5em 0;
   border: 0;
   border-top: 1px solid $border-color;
 }
@@ -173,7 +191,7 @@ hr {
 
 ul li,
 ol li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.65em;
 }
 
 li ul,
@@ -208,6 +226,7 @@ figure {
     border-radius: $border-radius;
     -webkit-transition: $global-transition;
     transition: $global-transition;
+    box-shadow: 0 12px 30px rgba(24, 34, 45, 0.08);
   }
 
   > a {

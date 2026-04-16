@@ -5,8 +5,10 @@
 .masthead {
   position: sticky;
   top: 0;
-  background-color: white;
-  border-bottom: 1px solid $border-color;
+  background: linear-gradient(180deg, rgba(255, 253, 249, 0.9), rgba(255, 248, 239, 0.82));
+  border-bottom: 1px solid rgba(234, 223, 206, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -16,7 +18,7 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: .5em;
+    padding: .7em 1em;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
@@ -55,6 +57,11 @@
   list-style-type: none;
   white-space: nowrap;
 
+  a {
+    color: $text-color;
+    transition: color 180ms ease, transform 180ms ease, background-color 180ms ease;
+  }
+
   &--lg {
     padding-right: 7em;
     font-weight: 700;
@@ -64,5 +71,6 @@
 .masthead__menu-home-item a {
   font-size: 1.2rem;  // Increase or adjust size as needed
   font-weight: 700;   // Makes it bold
-  color: #000000;     // Optional: set a custom color
+  color: $heading-color;
+  letter-spacing: -0.02em;
 }

@@ -6,7 +6,7 @@
 <strong>Note:</strong> I am currently looking for internship opportunities. Please feel free to contact me if you have any relevant positions available.
 </p>
 
-I am a joint PhD student at the [University of Surrey](https://www.surrey.ac.uk/) (UoS), United Kingdom, and the [University of Wollongong](https://www.uow.edu.au/) (UoW), Australia, focusing on resource- and data-efficient methods for 3D scene understanding. My research is supervised by [Xiatian Zhu](https://x-up-lab.github.io/) at UoS, and [Son Lam Phung](https://documents.uow.edu.au/~phung) at UoW. I also work with [Lu Yin](https://luuyin.com/), and [Salim Bouzerdoum](https://scholars.uow.edu.au/a-bouzerdoum) and [Son Lam Phung](https://documents.uow.edu.au/~phung).
+I am a joint PhD student at the [University of Surrey](https://www.surrey.ac.uk/) (UoS), United Kingdom, and the [University of Wollongong](https://www.uow.edu.au/) (UoW), Australia, focusing on resource- and data-efficient methods for 3D scene understanding. My research is supervised by [Xiatian Zhu](https://x-up-lab.github.io/) at UoS, and [Son Lam Phung](https://documents.uow.edu.au/~phung) at UoW. I also work with [Lu Yin](https://luuyin.com/), and [Salim Bouzerdoum](https://scholars.uow.edu.au/a-bouzerdoum).
 
 Before embarking on my PhD journey, I worked at [MBZUAI](https://mbzuai.ac.ae/) in Abu Dhabi, where I collaborated with [Salman Khan](https://salman-h-khan.github.io) and [Fahad Khan](https://scholar.google.com/citations?user=zvaeYnUAAAAJ&hl=en) on utilising foundational models for continual learning in image and point cloud understanding.
 

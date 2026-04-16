@@ -5,9 +5,11 @@
 #main {
   @include container;
   @include clearfix;
-  margin-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
+  margin-top: 1.1em;
+  padding-left: 1.15em;
+  padding-right: 1.15em;
+  padding-top: 0.35rem;
+  padding-bottom: 2rem;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
@@ -17,6 +19,14 @@
 }
 
 .page {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  overflow: hidden;
+
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
@@ -37,6 +47,7 @@
 .page__title {
   margin-top: 0;
   line-height: 1;
+  color: $heading-color;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -49,6 +60,8 @@
 }
 
 .page__content {
+  padding: 1.8rem 1.15rem 2.25rem;
+
   #about-me{
     margin-top: -10em;
       &:before { 
@@ -61,13 +74,22 @@
     }
   }
   h1 {
-    margin-top: 1em;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    margin-top: 0.8em;
+    padding-bottom: 0.55em;
+    border-bottom: 1px solid rgba(234, 223, 206, 0.55);
+    font-family: $header-font-family;
+    font-weight: 600;
+    letter-spacing: -0.025em;
   }
 
   p, li, dl {
     font-size: 1em;
+  }
+
+  ul li,
+  ol li {
+    margin-bottom: 0.35em;
+    line-height: 1.4;
   }
 
   /* paragraph indents */
@@ -85,9 +107,11 @@
 
   a {
     text-decoration: underline;
+    text-decoration-color: rgba(76, 143, 190, 0.38);
 
     &:hover {
       text-decoration: underline;
+      text-decoration-color: $link-color-hover;
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
@@ -238,7 +262,7 @@
 
 .page__meta {
   margin-top: 2em;
-  color: mix(#fff, $gray, 25%);
+  color: mix(#fff, $text-color, 30%);
   font-family: $sans-serif;
   font-size: $type-size-6;
 

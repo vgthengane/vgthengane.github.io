@@ -57,7 +57,8 @@
         order: 2;
         img {
             max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
+        box-shadow: 0 16px 34px rgba(24, 34, 45, 0.12);
+        border-radius: 1rem;
             object-fit: cover;
         }
     }
@@ -107,7 +108,7 @@ h1:before, .anchor:before {
 }
 
 .logo-row {
-  --logo-gap: 1.75rem;
+  --logo-gap: 1.5rem;
   display: flex;
   align-items: center;
   gap: var(--logo-gap);
@@ -118,11 +119,13 @@ h1:before, .anchor:before {
     max-height: 60px;
     max-width: 160px;
     object-fit: contain;
-    border-radius: 0.25rem;
-    transition: transform 0.3s ease;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: saturate(0.95) contrast(1.02);
 
     &:hover {
-      transform: scale(1.05);
+      transform: translateY(-2px) scale(1.03);
+      filter: saturate(1) contrast(1.05);
     }
   }
 
@@ -138,16 +141,18 @@ h1:before, .anchor:before {
 }
 
 .logo-marquee {
-  margin-top: 2rem;
+  margin: 2.25rem 0 0.5rem;
   width: 100%;
   overflow: hidden;
+  padding: 1rem 0;
+  border: 0;
 }
 
 .logo-track {
   display: flex;
   gap: 0;
   width: max-content;
-  animation: logo-scroll 24s linear infinite;
+  animation: logo-scroll 28s linear infinite;
   will-change: transform;
 
   &:hover {
@@ -171,20 +176,23 @@ h1:before, .anchor:before {
 
 .news-list-wrap {
   position: relative;
-  max-height: 18rem;
+  max-height: 18.5rem;
   overflow-y: auto;
   scrollbar-gutter: stable;
-  padding-right: 0.35rem;
-  padding-bottom: 0.25rem;
-  border-bottom: 1px solid #e4ebf2;
+  padding: 0.15rem 0.2rem 0.2rem 0;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .news-list {
   margin: 0;
-  padding-left: 1.25rem;
+  padding: 0.9rem 0 0.9rem 1.35rem;
 
   li {
-    margin-bottom: 0.55rem;
-    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+    padding-right: 0.5rem;
   }
 }

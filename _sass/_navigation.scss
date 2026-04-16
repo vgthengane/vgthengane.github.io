@@ -175,12 +175,12 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: $background-color;
+  background: transparent;
 
   a {
     display: block;
     margin: 0 1rem;
-    padding: 0.5rem 0;
+    padding: 0.55rem 0;
     color: $masthead-link-color;
     text-decoration: none;
 
@@ -196,9 +196,10 @@
     padding: 0 0.5rem;
     border: 0;
     outline: none;
-    background-color: $primary-color;
+    background-color: rgba(47, 111, 146, 0.9);
     color: #fff;
     cursor: pointer;
+    border-radius: 999px;
   }
 
   .visible-links {
@@ -225,15 +226,18 @@
 
     a {
       position: relative;
+      padding: 0.55rem 0.15rem;
+      border-radius: 999px;
 
       &:before {
         content: "";
         position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 4px;
-        background: mix(#fff, $primary-color, 50%);
-        width: 100%;
+        left: 0.15rem;
+        bottom: 0.2rem;
+        height: 2px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, $primary-color, $info-color);
+        width: calc(100% - 0.3rem);
         -webkit-transition: $global-transition;
         transition: $global-transition;
         -webkit-transform: scaleX(0);
@@ -257,17 +261,18 @@
     padding: 5px;
     border: 1px solid $border-color;
     border-radius: $border-radius;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(#000, 0.25);
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 18px 34px rgba(24, 34, 45, 0.12);
 
     a {
       margin: 0;
       padding: 10px 20px;
       font-size: $type-size-5;
+      border-radius: 999px;
 
       &:hover {
         color: $masthead-link-color-hover;
-        background: mix(#fff, $primary-color, 75%);
+        background: rgba(255, 125, 99, 0.08);
       }
     }
 
