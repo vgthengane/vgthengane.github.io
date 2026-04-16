@@ -1,46 +1,73 @@
-<h1 align="center">
-Vishal Thengane – Academic Homepage
-</h1>
+# Vishal Thengane - Academic Homepage
 
-<p align="center">
-Welcome to my academic homepage. I am a PhD researcher working on 3D scene understanding, continual learning, and data-efficient AI.
-</p>
+Personal academic website built with Jekyll.
 
-<p align="center">
-    <br>
-    <img src="docs/screenshot.png" width="100%" alt="Homepage Preview"/>
-    <br>
-</p>
+Base theme/inspiration: [AcadHomepage by RayeRen](https://rayeren.github.io/acad-homepage.github.io/)
 
-> 🛠️ This website is built using [AcadHomepage by RayeRen](https://rayeren.github.io/acad-homepage.github.io/)
+## Sections
 
----
+- About: [_pages/about.md](_pages/about.md)
+- News: [_pages/news.md](_pages/news.md)
+- Publications: [_pages/publications.md](_pages/publications.md)
+- Honors and Awards: [_pages/awards.md](_pages/awards.md)
+- Education: [_pages/educations.md](_pages/educations.md)
 
-## 🔍 About Me
+## Local Development
 
-I'm currently a Joint PhD candidate at the University of Surrey (UK) and the University of Wollongong (Australia). My research focuses on point cloud understanding, few-shot learning, and multi-modal learning.
+Prerequisites:
 
----
+- Ruby and Bundler installed
+- Gems installed with `bundle install`
 
-## 📄 Sections on This Site
+Build once:
 
-- **[Research](./_pages/research.md)** – Projects and publications
-- **[CV](./_pages/cv.md)** – Downloadable résumé/CV
-- **[Blog](./_pages/blog.md)** – Occasional research notes and insights
-- **[Contact](./_pages/contact.md)** – How to reach me
+```bash
+bundle exec jekyll build
+```
 
----
+Run locally:
 
-## 📬 Contact
+```bash
+bundle exec jekyll serve
+```
 
-Feel free to connect with me via:
+Then open:
 
-- ✉️ Email: `yourname [at] domain.com`
-- 🌐 [LinkedIn](https://linkedin.com/in/yourprofile)
-- 🧠 [Google Scholar](https://scholar.google.com/citations?user=YOUR_ID)
+- `http://127.0.0.1:4000`
 
----
+## Local Server for Phone Testing
+
+Use these steps to preview the site on your phone.
+
+1. Connect phone and laptop to the same Wi-Fi network.
+2. Start Jekyll so it listens on all network interfaces:
+
+```bash
+bundle exec jekyll serve --host 0.0.0.0 --port 4000
+```
+
+3. Find your laptop IP address:
+
+```bash
+ipconfig getifaddr en0 || ipconfig getifaddr en1
+```
+
+4. Open this URL on your phone browser:
+
+- `http://<YOUR_LAPTOP_IP>:4000`
+- Example: `http://192.168.8.130:4000`
+
+Quick troubleshooting:
+
+- Keep the Jekyll terminal running while testing.
+- If it does not open, check macOS firewall permissions for Terminal/Ruby.
+- If your router has AP isolation or guest Wi-Fi mode, disable it or use the main Wi-Fi.
+
+## Notes
+
+- Use `bundle exec jekyll serve` directly for local development.
+- This repository does not use a helper run script.
 
 ## License
 
-This website is open-source and based on [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io), released under the [MIT License](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE).
+This website is open source and based on [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io), released under the [MIT License](LICENSE).
