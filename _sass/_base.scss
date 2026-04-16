@@ -14,9 +14,9 @@ body {
   color: $text-color;
   font-family: $global-font-family;
   font-size: $doc-font-size * 1px; 
-  line-height: 1.5;
-  letter-spacing: -0.04em;   // tighten characters
-  word-spacing: -0.07em;     // optional: reduce word gaps
+  line-height: 1.4;
+  letter-spacing: 0.02em;     // open spacing
+  word-spacing: 0.1em;        // more space between words
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
@@ -24,7 +24,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 1em 0 0.5em;
+  margin: 1.2em 0 0.6em;
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
