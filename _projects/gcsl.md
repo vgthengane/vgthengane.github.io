@@ -9,8 +9,10 @@ number: 3
 
 year: 2024
 venue: "Arxiv 2024"
-authors: "<strong>Vishal Thengane</strong>, Tammuz Dubnov"
-affiliation: ""
+author_entries:
+  - name: "Vishal Thengane"
+    highlight: true
+  - name: "Tammuz Dubnov"
 contact_email: ""
 
 teaser_image: "/images/paper_teasers/gcsl.png"

@@ -60,14 +60,25 @@
       margin-top: 0.2rem;
       > div {
         position: relative;
+        width: 100%;
+        max-width: 420px;
+        aspect-ratio: 2 / 1;
+        background: #fff;
+        border: 1px solid rgba(234, 223, 206, 0.85);
+        border-radius: 0.75rem;
+        padding: 0.45rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
         img {
         display: block;
         width: 100%;
-        max-width: 400px;
-        box-shadow: 0 16px 34px rgba(24, 34, 45, 0.12);
-        border-radius: 0.7rem;
-            object-fit: cover;
+        height: 100%;
+        box-shadow: none;
+        border-radius: 0.45rem;
+            object-fit: contain;
+            background: #fff;
         }
     }
     
@@ -415,7 +426,8 @@ h1:before, .anchor:before {
 
 .project-header-center {
   text-align: center;
-  margin: 0.2rem 0 1.15rem;
+  margin: 0.2rem auto 1.15rem;
+  max-width: 860px;
 }
 
 .project-title {
@@ -437,12 +449,74 @@ h1:before, .anchor:before {
 .project-affiliation,
 .project-email {
   margin: 0.1rem 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: mix($heading-color, $text-color, 58%);
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.project-email {
-  font-size: 0.9rem;
+.project-authors {
+  margin-top: 0.35rem;
+  font-size: 1.08rem;
+  line-height: 1.45;
+}
+
+.project-affiliation {
+  margin-top: 0.45rem;
+  margin-bottom: 0.85rem;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.author-line,
+.affiliation-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.12rem 0.9rem;
+}
+
+.author-item,
+.affiliation-item {
+  display: inline-flex;
+  align-items: baseline;
+  margin: 0.03rem 0;
+}
+
+.project-authors > p,
+.project-affiliation > p {
+  margin: 0.15rem 0;
+}
+
+.project-authors > .author-line,
+.project-affiliation > .affiliation-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.08rem 0;
+}
+
+.project-affiliation p {
+  margin: 0.05rem 0;
+}
+
+.project-authors sup,
+.project-affiliation sup {
+  font-size: 0.66em;
+  line-height: 0;
+  vertical-align: 0.22em;
+}
+
+.project-header-center .project-email {
+  display: block;
+  width: 100%;
+  font-size: 0.96rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.05rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .project-tags {
@@ -450,7 +524,7 @@ h1:before, .anchor:before {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.35rem;
-  margin-top: 0.55rem;
+  margin-top: 0.85rem;
 }
 
 .project-tag {
@@ -466,17 +540,18 @@ h1:before, .anchor:before {
 
 .project-cover {
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
 
   img {
     display: block;
     margin: 0 auto;
-    width: 100%;
-    max-width: 780px;
-    border-radius: 1rem;
-    border: 1px solid rgba(234, 223, 206, 0.85);
-    box-shadow: 0 16px 38px rgba(24, 34, 45, 0.08);
+    width: auto;
+    max-width: min(100%, 940px);
+    height: auto;
+    border-radius: 0.55rem;
+    border: 0;
+    box-shadow: 0 10px 22px rgba(24, 34, 45, 0.06);
   }
 }
 
@@ -509,7 +584,7 @@ h1:before, .anchor:before {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.6rem;
-  margin: 0.35rem 0 1rem;
+  margin: 1.05rem 0 1rem;
 }
 
 .project-link-card {
@@ -669,6 +744,13 @@ h1:before, .anchor:before {
 }
 
 @media (max-width: 600px) {
+  .project-header-center,
+  .project-authors,
+  .project-affiliation,
+  .project-email {
+    max-width: 100%;
+  }
+
   .project-links-grid {
     width: 100%;
     max-width: 460px;
@@ -696,7 +778,7 @@ h1:before, .anchor:before {
 
   .project-cover img {
     height: auto;
-    border-radius: 0.75rem;
+    border-radius: 0.45rem;
     max-width: 100%;
   }
 }
@@ -790,4 +872,68 @@ h1:before, .anchor:before {
   font-weight: 500;
   white-space: nowrap;
   letter-spacing: 0.3px;
+}
+
+.blog-post-header {
+  margin-bottom: 1rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid rgba(234, 223, 206, 0.7);
+}
+
+.blog-post-title {
+  margin: 0 0 0.35rem;
+  line-height: 1.15;
+}
+
+.blog-post-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.blog-post-date {
+  margin: 0;
+  color: mix($heading-color, $text-color, 52%);
+  font-size: 0.92rem;
+}
+
+.blog-like-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.36rem 0.72rem;
+  border-radius: 999px;
+  border: 1px solid rgba(76, 143, 190, 0.32);
+  background: rgba(255, 255, 255, 0.74);
+  color: $heading-color;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(24, 34, 45, 0.08);
+    border-color: rgba(76, 143, 190, 0.5);
+  }
+
+  &.is-liked {
+    border-color: rgba(220, 38, 38, 0.45);
+    background: rgba(220, 38, 38, 0.08);
+    color: #b91c1c;
+  }
+}
+
+.blog-like-icon {
+  font-size: 0.92rem;
+  line-height: 1;
+}
+
+.blog-like-count {
+  min-width: 1.35em;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
 }

@@ -9,11 +9,18 @@ number: 1
 
 year: 2022
 venue: "ECCV 2022"
-authors: "Kuan-Wei Huang, Geoff Chih-Fan Chen, Po-Wen Chang, Sheng-Chieh Lin, Chia-Jung Hsu, <strong>Vishal Thengane</strong>, Joshua Yao-Yu Lin"
-affiliation: ""
+author_entries:
+  - name: "Kuan-Wei Huang"
+  - name: "Geoff Chih-Fan Chen"
+  - name: "Po-Wen Chang"
+  - name: "Sheng-Chieh Lin"
+  - name: "Chia-Jung Hsu"
+  - name: "Vishal Thengane"
+    highlight: true
+  - name: "Joshua Yao-Yu Lin"
 contact_email: ""
 
-teaser_image: "/images/paper_teasers/fm3d_survey.png"
+teaser_image: "/images/paper_teasers/strong_lensing_vit.png"
 tags:
   - Vision Transformer
   - Astronomy

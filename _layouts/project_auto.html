@@ -21,8 +21,27 @@ layout: compress
               <div class="project-header-center">
                 <h1 class="project-title">{{ page.title }}</h1>
                 {% if page.venue %}<p class="project-conference">{{ page.venue }}</p>{% endif %}
-                {% if page.authors %}<p class="project-authors">{{ page.authors }}</p>{% endif %}
-                {% if page.affiliation %}<p class="project-affiliation">{{ page.affiliation }}</p>{% endif %}
+                {% if page.author_entries and page.author_entries.size > 0 %}
+                <div class="project-authors">
+                  <span class="author-line">
+                    {% for author in page.author_entries %}
+                    <span class="author-item">
+                      {% if author.highlight %}<strong>{% endif %}{{ author.name }}{% if author.affiliations and author.affiliations.size > 0 %}<sup>{{ author.affiliations | join: ", " }}</sup>{% endif %}{% if author.highlight %}</strong>{% endif %}
+                    </span>
+                    {% endfor %}
+                  </span>
+                </div>
+                {% elsif page.authors_html %}<div class="project-authors">{{ page.authors_html }}</div>{% elsif page.authors %}<p class="project-authors">{{ page.authors }}</p>{% endif %}
+
+                {% if page.affiliation_entries and page.affiliation_entries.size > 0 %}
+                <div class="project-affiliation">
+                  <span class="affiliation-line">
+                    {% for aff in page.affiliation_entries %}
+                    <span class="affiliation-item"><sup>{{ aff.id }}</sup>{{ aff.name }}</span>
+                    {% endfor %}
+                  </span>
+                </div>
+                {% elsif page.affiliations_html %}<div class="project-affiliation">{{ page.affiliations_html }}</div>{% elsif page.affiliation %}<p class="project-affiliation">{{ page.affiliation }}</p>{% endif %}
                 {% if page.contact_email %}<p class="project-email">{{ page.contact_email }}</p>{% endif %}
 
                 <div class="project-links-grid">

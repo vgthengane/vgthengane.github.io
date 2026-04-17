@@ -9,8 +9,13 @@ number: 4
 
 year: 2025
 venue: "Arxiv 2025"
-authors: "<strong>Vishal Thengane</strong>, Xiatian Zhu, Salim Bouzerdoum, Son Lam Phung, Yunpeng Li"
-affiliation: ""
+author_entries:
+  - name: "Vishal Thengane"
+    highlight: true
+  - name: "Xiatian Zhu"
+  - name: "Salim Bouzerdoum"
+  - name: "Son Lam Phung"
+  - name: "Yunpeng Li"
 contact_email: ""
 
 teaser_image: "/images/paper_teasers/fm3d_survey.png"

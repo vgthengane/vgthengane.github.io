@@ -9,8 +9,12 @@ number: 2
 
 year: 2023
 venue: "CVPR 2023"
-authors: "<strong>Vishal Thengane</strong>, Salman Khan, Munawar Hayat, Fahad Khan"
-affiliation: ""
+author_entries:
+  - name: "Vishal Thengane"
+    highlight: true
+  - name: "Salman Khan"
+  - name: "Munawar Hayat"
+  - name: "Fahad Khan"
 contact_email: ""
 
 teaser_image: "/images/paper_teasers/continual_clip.png"

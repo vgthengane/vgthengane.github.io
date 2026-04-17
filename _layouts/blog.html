@@ -1,0 +1,92 @@
+---
+layout: compress
+---
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    <div id="main" role="main">
+      {% include sidebar.html %}
+
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            <header class="blog-post-header">
+              {% if page.title %}<h1 class="blog-post-title">{{ page.title }}</h1>{% endif %}
+              <div class="blog-post-meta-row">
+                {% if page.date %}<p class="blog-post-date">{{ page.date | date: "%B %-d, %Y" }}</p>{% endif %}
+                {% if page.likes_enabled != false %}
+                <button class="blog-like-button" type="button" data-blog-like-button aria-pressed="false" aria-label="Like this post">
+                  <span class="blog-like-icon" aria-hidden="true">♡</span>
+                  <span>Like</span>
+                  <span class="blog-like-count" data-blog-like-count>0</span>
+                </button>
+                {% endif %}
+              </div>
+            </header>
+            {{ content }}
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <footer class="page__footer">
+      {% include footer.html %}
+    </footer>
+
+    {% include scripts.html %}
+
+    <script>
+      (function () {
+        var button = document.querySelector('[data-blog-like-button]');
+        if (!button) {
+          return;
+        }
+
+        var countEl = button.querySelector('[data-blog-like-count]');
+        var postKey = '{{ page.url | escape }}';
+        var countKey = 'blog:likes:count:' + postKey;
+        var likedKey = 'blog:likes:liked:' + postKey;
+
+        var count = parseInt(localStorage.getItem(countKey) || '0', 10);
+        var liked = localStorage.getItem(likedKey) === '1';
+
+        function render() {
+          countEl.textContent = String(Math.max(0, count));
+          button.setAttribute('aria-pressed', liked ? 'true' : 'false');
+          button.classList.toggle('is-liked', liked);
+          var icon = button.querySelector('.blog-like-icon');
+          if (icon) {
+            icon.textContent = liked ? '♥' : '♡';
+          }
+        }
+
+        button.addEventListener('click', function () {
+          if (liked) {
+            liked = false;
+            count = Math.max(0, count - 1);
+          } else {
+            liked = true;
+            count = count + 1;
+          }
+
+          localStorage.setItem(countKey, String(count));
+          localStorage.setItem(likedKey, liked ? '1' : '0');
+          render();
+        });
+
+        render();
+      })();
+    </script>
+  </body>
+</html>

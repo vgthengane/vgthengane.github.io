@@ -9,8 +9,30 @@ number: 5
 
 year: 2025
 venue: "BMVC 2025"
-authors: "<strong>Vishal Thengane</strong>, Jean Lahoud, Hisham Cholakkal, Rao Muhammad Anwer, Lu Yin, Xiatian Zhu, Salman Khan"
-affiliation: "University of Surrey, University of Wollongong"
+author_entries:
+  - name: "Vishal Thengane"
+    affiliations: [1, 2]
+    highlight: true
+  - name: "Jean Lahoud"
+    affiliations: [1]
+  - name: "Hisham Cholakkal"
+    affiliations: [2]
+  - name: "Rao Muhammad Anwer"
+    affiliations: [2]
+  - name: "Lu Yin"
+    affiliations: [1]
+  - name: "Xiatian Zhu"
+    affiliations: [1]
+  - name: "Salman Khan"
+    affiliations: [2, 3]
+
+affiliation_entries:
+  - id: 1
+    name: "University of Surrey, UK"
+  - id: 2
+    name: "Mohamed bin Zayed University of Artificial Intelligence, UAE"
+  - id: 3
+    name: "Australian National University, Australia"
 contact_email: "vgthengane (at) gmail (dot) com"
 
 teaser_image: "/images/paper_teasers/climb3d.png"
@@ -24,7 +46,7 @@ arxiv_url: "https://arxiv.org/abs/2502.17429"
 code_url: "https://github.com/vgthengane/CLIMB3D"
 youtube_url: ""
 
-short_intro: "We introduce class-incremental learning for point cloud instance segmentation and curate benchmarks from the long-tail ScanNet200 dataset. To address class imbalance, we propose a novel module that ensures more uniform performance across frequent and rare classes."
+short_intro: "We introduce class-incremental learning for point cloud instance segmentation, with benchmarks from the long-tail ScanNet200 dataset. We also propose a module to address class imbalance and improve performance across frequent and rare classes.."
 
 abstract: "CLIMB-3D introduces class-incremental learning for point cloud instance segmentation and evaluates it on long-tail settings derived from ScanNet200. The method addresses class imbalance to improve performance across both frequent and rare classes."
 method: "The framework formulates continual point cloud instance segmentation with class imbalance in mind. It uses an incremental training strategy with imbalance-aware components to preserve prior knowledge while learning new classes more uniformly."

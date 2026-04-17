@@ -10,7 +10,14 @@
 
 [{{ include.title }}]({{ include.link }})
 
+{% capture authors_text %}
+{% if include.author_entries and include.author_entries.size > 0 %}
+{% for author in include.author_entries %}{% if forloop.first == false %}, {% endif %}{% if author.highlight %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% endfor %}
+{% else %}
 {{ include.authors }}
+{% endif %}
+{% endcapture %}
+{{ authors_text | strip }}
 
 {% if include.citation %}
 <strong><span class='show_paper_citations' data='{{ include.citation }}'></span></strong>

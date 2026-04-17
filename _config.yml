@@ -127,6 +127,12 @@ defaults:
     values:
       layout: default
       author_profile: true
+  - scope:
+      path: ""
+      type: blogs
+    values:
+      layout: blog
+      author_profile: false
 
 
 # Sass/SCSS
@@ -153,6 +159,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  blogs:
+    output: true
+    permalink: /blogs/:path/
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate

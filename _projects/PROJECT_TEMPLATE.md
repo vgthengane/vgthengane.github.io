@@ -10,8 +10,24 @@ number: 0
 
 year: 2026
 venue: "CONFERENCE YEAR"
-authors: "<strong>AUTHOR_1</strong>, AUTHOR_2, AUTHOR_3"
-affiliation: "UNIVERSITY_OR_LAB"
+author_entries:
+  - name: "AUTHOR_1"
+    affiliations: [1, 2]
+    highlight: true
+  - name: "AUTHOR_2"
+    affiliations: [1]
+  - name: "AUTHOR_3"
+    affiliations: [2]
+
+affiliation_entries:
+  - id: 1
+    name: "UNIVERSITY_OR_LAB_1"
+  - id: 2
+    name: "UNIVERSITY_OR_LAB_2"
+
+# Optional legacy fields (use only if needed):
+# authors: "<strong>AUTHOR_1</strong>, AUTHOR_2, AUTHOR_3"
+# affiliation: "UNIVERSITY_OR_LAB"
 contact_email: "your_email@domain.com"
 
 teaser_image: "/images/paper_teasers/PROJECT_IMAGE.png"
