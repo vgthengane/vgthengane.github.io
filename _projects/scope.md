@@ -10,6 +10,7 @@ number: 6
 
 year: 2026
 venue: "CVPR 2026"
+venue_long: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Findings 2026"
 author_entries:
   - name: "Vishal Thengane"
     affiliations: [1, 2]

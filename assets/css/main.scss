@@ -372,6 +372,13 @@ h1:before, .anchor:before {
   background: transparent;
   border-radius: 0;
   box-shadow: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 }
 
 .news-list {
@@ -438,11 +445,21 @@ h1:before, .anchor:before {
 }
 
 .project-conference {
-  margin: 0 0 0.35rem;
-  font-size: 0.98rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.55rem auto 0.95rem;
+  padding: 0.24rem 0.75rem;
+  border: 1px solid rgba(166, 90, 77, 0.18);
+  border-radius: 999px;
+  background: rgba(166, 90, 77, 0.08);
+  color: #a65a4d;
+  font-size: 1.02rem;
   font-weight: 700;
-  color: mix($primary-color, $heading-color, 62%);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  text-shadow: none;
+  box-shadow: 0 6px 14px rgba(24, 34, 45, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .project-authors,
@@ -506,6 +523,14 @@ h1:before, .anchor:before {
   font-size: 0.66em;
   line-height: 0;
   vertical-align: 0.22em;
+}
+
+@media (max-width: 600px) {
+  .project-conference {
+    font-size: 0.95rem;
+    padding: 0.22rem 0.68rem;
+    letter-spacing: 0.025em;
+  }
 }
 
 .project-header-center .project-email {

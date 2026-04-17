@@ -20,7 +20,7 @@ layout: compress
             <div class="project-hero">
               <div class="project-header-center">
                 <h1 class="project-title">{{ page.title }}</h1>
-                {% if page.venue %}<p class="project-conference">{{ page.venue }}</p>{% endif %}
+                {% if page.venue_long or page.venue %}<p class="project-conference">{{ page.venue_long | default: page.venue }}</p>{% endif %}
                 {% if page.author_entries and page.author_entries.size > 0 %}
                 <div class="project-authors">
                   <span class="author-line">

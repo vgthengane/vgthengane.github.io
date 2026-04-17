@@ -9,7 +9,8 @@ publication_show_project_link: true
 number: 0
 
 year: 2026
-venue: "CONFERENCE YEAR"
+venue: "CONFERENCE ABBR. YEAR"
+venue_long: "FULL CONFERENCE OR JOURNAL NAME"
 author_entries:
   - name: "AUTHOR_1"
     affiliations: [1, 2]

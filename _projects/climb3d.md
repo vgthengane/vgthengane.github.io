@@ -3,12 +3,13 @@ layout: project_auto
 title: "CLIMB-3D: Continual Learning for Imbalanced 3D Instance Segmentation"
 permalink: /climb3d
 show_in_publications: true
-publication_section: featured
+publication_section: publication
 publication_show_project_link: true
 number: 5
 
 year: 2025
 venue: "BMVC 2025"
+venue_long: "British Machine Vision Conference (BMVC) 2025"
 author_entries:
   - name: "Vishal Thengane"
     affiliations: [1, 2]
