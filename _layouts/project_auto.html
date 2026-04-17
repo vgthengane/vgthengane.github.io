@@ -26,7 +26,7 @@ layout: compress
                   <span class="author-line">
                     {% for author in page.author_entries %}
                     <span class="author-item">
-                      {% if author.highlight %}<strong>{% endif %}{{ author.name }}{% if author.affiliations and author.affiliations.size > 0 %}<sup>{{ author.affiliations | join: ", " }}</sup>{% endif %}{% if author.highlight %}</strong>{% endif %}
+                      {% if author.highlight %}<a class="project-author-home-link" href="{{ '/' | relative_url }}"><strong>{{ author.name }}</strong></a>{% else %}{{ author.name }}{% endif %}{% if author.affiliations and author.affiliations.size > 0 %}<sup>{{ author.affiliations | join: ", " }}</sup>{% endif %}
                     </span>
                     {% endfor %}
                   </span>
@@ -108,6 +108,10 @@ layout: compress
         </div>
       </article>
     </div>
+
+    <footer class="page__footer">
+      {% include footer.html %}
+    </footer>
 
     <script>
       document.addEventListener('click', async function (event) {

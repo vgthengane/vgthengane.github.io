@@ -44,10 +44,10 @@ affiliation_entries:
 contact_email: "vgthengane (at) gmail (dot) com"
 
 teaser_image: "/images/paper_teasers/scope.png"
-tags:
-  - Few-shot learning
-  - Continual learning
-  - Point Cloud Segmentation
+# tags:
+#   - Few-shot learning
+#   - Continual learning
+#   - Point Cloud Segmentation
 
 paper_url: "https://arxiv.org/pdf/2603.06572"
 arxiv_url: "https://arxiv.org/abs/2603.06572"

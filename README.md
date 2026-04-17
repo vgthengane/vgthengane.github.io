@@ -57,6 +57,16 @@ ipconfig getifaddr en0 || ipconfig getifaddr en1
 - `http://<YOUR_LAPTOP_IP>:4000`
 - Example: `http://192.168.8.130:4000`
 
+If you are opening the site on the Mac itself, use:
+
+- `http://127.0.0.1:4000`
+
+Important:
+
+- Do not use `http://127.0.0.1:4000` on the phone. That points to the phone itself, not your laptop.
+- On Safari for macOS, `http://127.0.0.1:4000` can fail if HTTPS-Only is enabled.
+- If Safari shows an HTTPS-Only error, temporarily disable HTTPS-Only for the local address or use a browser that allows local HTTP previews.
+
 Quick troubleshooting:
 
 - Keep the Jekyll terminal running while testing.
