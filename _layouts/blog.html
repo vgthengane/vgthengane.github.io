@@ -7,24 +7,132 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <style>
+      .blog-page-main {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+
+      .blog-layout-grid {
+        display: grid;
+        grid-template-columns: 250px minmax(0, 860px);
+        gap: 1.5rem;
+        align-items: start;
+      }
+
+      .blog-sections-nav {
+        position: sticky;
+        top: 1rem;
+        border-right: 1px solid rgba(0, 0, 0, 0.08);
+        padding-right: 0.9rem;
+      }
+
+      .blog-sections-title {
+        margin: 0 0 0.55rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        opacity: 0.7;
+      }
+
+      .blog-sections-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .blog-sections-list li {
+        margin: 0;
+        padding: 0;
+      }
+
+      .blog-sections-link {
+        display: block;
+        font-size: 0.93rem;
+        line-height: 1.35;
+        padding: 0.35rem 0.45rem;
+        border-radius: 0.35rem;
+        text-decoration: none;
+        color: inherit;
+        opacity: 0.82;
+      }
+
+      .blog-sections-link:hover {
+        background: rgba(0, 0, 0, 0.05);
+      }
+
+      .blog-sections-link.is-active {
+        background: rgba(15, 118, 110, 0.14);
+        color: #0f766e;
+        opacity: 1;
+        font-weight: 600;
+      }
+
+      .blog-post-header {
+        margin-bottom: 1.25rem;
+      }
+
+      .blog-back-link {
+        display: inline-block;
+        margin-bottom: 0.8rem;
+        text-decoration: underline;
+      }
+
+      .blog-post-meta-row {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .blog-reading-meta {
+        font-size: 0.95rem;
+        opacity: 0.85;
+      }
+
+      @media (max-width: 980px) {
+        .blog-layout-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .blog-sections-nav {
+          position: static;
+          border-right: 0;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+          margin-bottom: 1rem;
+          padding-right: 0;
+          padding-bottom: 0.65rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
 
     {% include browser-upgrade.html %}
-    {% include masthead.html %}
 
-    <div id="main" role="main">
-      {% include sidebar.html %}
+    <main class="blog-page-main" role="main">
+      <div class="blog-layout-grid">
+        <aside class="blog-sections-nav" aria-label="On this page" data-blog-sections-nav hidden>
+          <p class="blog-sections-title">On this page</p>
+          <ul class="blog-sections-list" data-blog-sections-list></ul>
+        </aside>
 
       <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
         <div class="page__inner-wrap">
-          <section class="page__content" itemprop="text">
+          <section class="page__content" itemprop="text" data-blog-content>
             <header class="blog-post-header">
+              <a class="blog-back-link" href="{{ '/blogs/' | relative_url }}">&larr; Back to Blogs</a>
               {% if page.title %}<h1 class="blog-post-title">{{ page.title }}</h1>{% endif %}
               <div class="blog-post-meta-row">
                 {% if page.date %}<p class="blog-post-date">{{ page.date | date: "%B %-d, %Y" }}</p>{% endif %}
+                <p class="blog-reading-meta">
+                  <span data-blog-read-time>0 min read</span>
+                  <span aria-hidden="true"> | </span>
+                  <span data-blog-left-to-read>0 min left</span>
+                </p>
                 {% if page.likes_enabled != false %}
                 <button class="blog-like-button" type="button" data-blog-like-button aria-pressed="false" aria-label="Like this post">
                   <span class="blog-like-icon" aria-hidden="true">♡</span>
@@ -38,7 +146,8 @@ layout: compress
           </section>
         </div>
       </article>
-    </div>
+      </div>
+    </main>
 
     <footer class="page__footer">
       {% include footer.html %}
@@ -48,6 +157,117 @@ layout: compress
 
     <script>
       (function () {
+        var contentEl = document.querySelector('[data-blog-content]');
+        var navEl = document.querySelector('[data-blog-sections-nav]');
+        var navListEl = document.querySelector('[data-blog-sections-list]');
+        var readTimeEl = document.querySelector('[data-blog-read-time]');
+        var leftEl = document.querySelector('[data-blog-left-to-read]');
+        var wordsPerMinute = 220;
+
+        function calculateReadTimeMinutes() {
+          if (!contentEl) {
+            return 0;
+          }
+          var text = contentEl.innerText || contentEl.textContent || '';
+          var words = text.trim().split(/\s+/).filter(Boolean).length;
+          return Math.max(1, Math.ceil(words / wordsPerMinute));
+        }
+
+        var totalMinutes = calculateReadTimeMinutes();
+        if (readTimeEl) {
+          readTimeEl.textContent = totalMinutes + ' min read';
+        }
+
+        function updateLeftToRead() {
+          if (!contentEl || !leftEl) {
+            return;
+          }
+
+          var rect = contentEl.getBoundingClientRect();
+          var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+          var totalScrollable = rect.height + viewportHeight;
+          var progressed = Math.min(Math.max(viewportHeight - rect.top, 0), totalScrollable);
+          var progressRatio = totalScrollable > 0 ? progressed / totalScrollable : 1;
+          var minutesLeft = Math.max(0, Math.ceil(totalMinutes * (1 - progressRatio)));
+          leftEl.textContent = minutesLeft + ' min left';
+        }
+
+        window.addEventListener('scroll', updateLeftToRead, { passive: true });
+        window.addEventListener('resize', updateLeftToRead);
+        updateLeftToRead();
+
+        var headingEls = [];
+
+        function slugifyHeading(text) {
+          return text
+            .toLowerCase()
+            .trim()
+            .replace(/[^a-z0-9\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-');
+        }
+
+        function ensureHeadingIds() {
+          if (!contentEl) {
+            return;
+          }
+
+          var headings = contentEl.querySelectorAll('h2, h3');
+          headingEls = Array.prototype.slice.call(headings);
+
+          headingEls.forEach(function (heading, index) {
+            if (!heading.id) {
+              heading.id = slugifyHeading(heading.textContent || 'section-' + index);
+            }
+          });
+        }
+
+        function buildSectionNav() {
+          if (!navEl || !navListEl || !headingEls.length) {
+            return;
+          }
+
+          var html = '';
+          headingEls.forEach(function (heading) {
+            var title = (heading.textContent || '').trim();
+            if (!title) {
+              return;
+            }
+            html += '<li><a class="blog-sections-link" href="#' + heading.id + '" data-section-id="' + heading.id + '">' + title + '</a></li>';
+          });
+
+          navListEl.innerHTML = html;
+          navEl.hidden = false;
+        }
+
+        function updateActiveSection() {
+          if (!headingEls.length || !navListEl) {
+            return;
+          }
+
+          var currentId = headingEls[0].id;
+          var triggerLine = 130;
+
+          headingEls.forEach(function (heading) {
+            var rect = heading.getBoundingClientRect();
+            if (rect.top <= triggerLine) {
+              currentId = heading.id;
+            }
+          });
+
+          var links = navListEl.querySelectorAll('.blog-sections-link');
+          Array.prototype.forEach.call(links, function (link) {
+            var isActive = link.getAttribute('data-section-id') === currentId;
+            link.classList.toggle('is-active', isActive);
+          });
+        }
+
+        ensureHeadingIds();
+        buildSectionNav();
+        window.addEventListener('scroll', updateActiveSection, { passive: true });
+        window.addEventListener('resize', updateActiveSection);
+        updateActiveSection();
+
         var button = document.querySelector('[data-blog-like-button]');
         if (!button) {
           return;

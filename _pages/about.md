@@ -19,6 +19,6 @@ My research interests include:
 - Multi-modal learning  
 - Efficient learning  
 
-I am open to collaboration. Feel free to connect with me for further discussion.
+<span style="color: #a65a4d; font-weight: 400;">Let's connect about collaborations or exciting openings!</span> Please <a href="mailto:vgthengane@gmail.com" style="color: inherit; text-decoration: underline;">contact me</a> if you'd like to discuss potential work together.
 
 {% include about/logo-marquee.html %}

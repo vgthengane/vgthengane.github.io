@@ -6,7 +6,7 @@ author_profile: false
 
 {% assign sorted_blogs = "" | split: "" %}
 {% if site.blogs %}
-{% assign sorted_blogs = site.blogs | sort: "date" | reverse %}
+{% assign sorted_blogs = site.blogs | where_exp: "post", "post.published != false" | sort: "path" | reverse %}
 {% endif %}
 
 {% if sorted_blogs.size > 0 %}
@@ -25,5 +25,5 @@ author_profile: false
 
 {% endfor %}
 {% else %}
-No blog posts yet. Add a Markdown file in `_blogs/` to publish your first post.
+No blog posts yet. Add a folder in `_blogs/YYYY-MM-DD-blog-name/` with an `index.md` file to publish your first post.
 {% endif %}

@@ -92,6 +92,7 @@ exclude:
   - tmp
   - vendor
   - NOTES.md
+  - _drafts
 keep_files:
   - .git
   - .svn
