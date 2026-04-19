@@ -10,33 +10,23 @@ number: 5
 year: 2025
 venue: "BMVC 2025"
 venue_long: "British Machine Vision Conference (BMVC) 2025"
-author_entries:
-  - name: "Vishal Thengane"
-    affiliations: [1, 2]
-    highlight: true
-  - name: "Jean Lahoud"
-    affiliations: [1]
-  - name: "Hisham Cholakkal"
-    affiliations: [2]
-  - name: "Rao Muhammad Anwer"
-    affiliations: [2]
-  - name: "Lu Yin"
-    affiliations: [1]
-  - name: "Xiatian Zhu"
-    affiliations: [1]
-  - name: "Salman Khan"
-    affiliations: [2, 3]
+authors:
+  - "<a class='project-author-home-link' href='{{ '/' | relative_url }}'><strong>Vishal Thengane</strong></a><sup>1, 2</sup>"
+  - "Jean Lahoud<sup>1</sup>"
+  - "Hisham Cholakkal<sup>2</sup>"
+  - "Rao Muhammad Anwer<sup>2</sup>"
+  - "Lu Yin<sup>1</sup>"
+  - "Xiatian Zhu<sup>1</sup>"
+  - "Salman Khan<sup>2, 3</sup>"
 
-affiliation_entries:
-  - id: 1
-    name: "University of Surrey, UK"
-  - id: 2
-    name: "Mohamed bin Zayed University of Artificial Intelligence, UAE"
-  - id: 3
-    name: "Australian National University, Australia"
+affiliations:
+  - "<sup>1</sup>University of Surrey, UK"
+  - "<sup>2</sup>Mohamed bin Zayed University of Artificial Intelligence, UAE"
+  - "<sup>3</sup>Australian National University, Australia"
+  
 contact_email: "vgthengane (at) gmail (dot) com"
 
-teaser_image: "/images/paper_teasers/climb3d.png"
+teaser_image: "/projects/climb3d/assets/teaser.png"
 # tags:
 #   - Continual Learning
 #   - 3D Vision
@@ -54,7 +44,7 @@ abstract: "While 3D instance segmentation (3DIS) has advanced significantly, mos
 method: |
   CLIMB-3D extends class-incremental 3D instance segmentation with imbalance-aware learning.
 
-  ![](/images/paper_teasers/climb3d.png)
+  ![](/projects/climb3d/assets/teaser.png)
 
   Core components:
 

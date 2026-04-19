@@ -9,15 +9,14 @@ number: 2
 
 year: 2023
 venue: "CVPR 2023"
-author_entries:
-  - name: "Vishal Thengane"
-    highlight: true
-  - name: "Salman Khan"
-  - name: "Munawar Hayat"
-  - name: "Fahad Khan"
+authors: |
+  <a class="project-author-home-link" href="{{ '/' | relative_url }}"><strong>Vishal Thengane</strong></a>,
+  Salman Khan,
+  Munawar Hayat,
+  Fahad Khan
 contact_email: ""
 
-teaser_image: "/images/paper_teasers/continual_clip.png"
+teaser_image: "/projects/continual-clip/assets/teaser.png"
 tags:
   - Continual Learning
   - CLIP

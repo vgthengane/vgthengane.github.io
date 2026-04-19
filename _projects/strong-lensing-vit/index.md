@@ -9,18 +9,17 @@ number: 1
 
 year: 2022
 venue: "ECCV 2022"
-author_entries:
-  - name: "Kuan-Wei Huang"
-  - name: "Geoff Chih-Fan Chen"
-  - name: "Po-Wen Chang"
-  - name: "Sheng-Chieh Lin"
-  - name: "Chia-Jung Hsu"
-  - name: "Vishal Thengane"
-    highlight: true
-  - name: "Joshua Yao-Yu Lin"
+authors: |
+  Kuan-Wei Huang,
+  Geoff Chih-Fan Chen,
+  Po-Wen Chang,
+  Sheng-Chieh Lin,
+  Chia-Jung Hsu,
+  <a class="project-author-home-link" href="{{ '/' | relative_url }}"><strong>Vishal Thengane</strong></a>,
+  Joshua Yao-Yu Lin
 contact_email: ""
 
-teaser_image: "/images/paper_teasers/strong_lensing_vit.png"
+teaser_image: "/projects/strong-lensing-vit/assets/teaser.png"
 tags:
   - Vision Transformer
   - Astronomy

@@ -21,7 +21,24 @@ layout: compress
               <div class="project-header-center">
                 <h1 class="project-title">{{ page.title }}</h1>
                 {% if page.venue_long or page.venue %}<p class="project-conference">{{ page.venue_long | default: page.venue }}</p>{% endif %}
-                {% if page.author_entries and page.author_entries.size > 0 %}
+                {% assign authors_json = page.authors | jsonify %}
+                {% if page.authors %}
+                {% if authors_json contains '[' %}
+                <div class="project-authors">
+                  <span class="author-line">
+                    {% for author in page.authors %}
+                    <span class="author-item">{{ author }}</span>
+                    {% endfor %}
+                  </span>
+                </div>
+                {% else %}
+                <div class="project-authors">{{ page.authors | markdownify }}</div>
+                {% endif %}
+                {% elsif page.author_block_markdown %}
+                <div class="project-authors">{{ page.author_block_markdown | markdownify }}</div>
+                {% elsif page.authors_markdown %}
+                <div class="project-authors">{{ page.authors_markdown | markdownify }}</div>
+                {% elsif page.author_entries and page.author_entries.size > 0 %}
                 <div class="project-authors">
                   <span class="author-line">
                     {% for author in page.author_entries %}
@@ -31,9 +48,33 @@ layout: compress
                     {% endfor %}
                   </span>
                 </div>
-                {% elsif page.authors_html %}<div class="project-authors">{{ page.authors_html }}</div>{% elsif page.authors %}<p class="project-authors">{{ page.authors }}</p>{% endif %}
+                {% elsif page.author_list and page.author_list.size > 0 %}
+                <div class="project-authors">
+                  <span class="author-line">
+                    {% for author in page.author_list %}
+                    <span class="author-item">{{ author }}</span>
+                    {% endfor %}
+                  </span>
+                </div>
+                {% elsif page.authors_html %}<div class="project-authors">{{ page.authors_html }}</div>{% endif %}
 
-                {% if page.affiliation_entries and page.affiliation_entries.size > 0 %}
+                {% unless page.author_block_markdown %}
+                {% assign affiliations_json = page.affiliations | jsonify %}
+                {% if page.affiliations %}
+                {% if affiliations_json contains '[' %}
+                <div class="project-affiliation">
+                  <span class="affiliation-line">
+                    {% for aff in page.affiliations %}
+                    <span class="affiliation-item">{{ aff }}</span>
+                    {% endfor %}
+                  </span>
+                </div>
+                {% else %}
+                <div class="project-affiliation">{{ page.affiliations | markdownify }}</div>
+                {% endif %}
+                {% elsif page.affiliations_markdown %}
+                <div class="project-affiliation">{{ page.affiliations_markdown | markdownify }}</div>
+                {% elsif page.affiliation_entries and page.affiliation_entries.size > 0 %}
                 <div class="project-affiliation">
                   <span class="affiliation-line">
                     {% for aff in page.affiliation_entries %}
@@ -41,7 +82,17 @@ layout: compress
                     {% endfor %}
                   </span>
                 </div>
+                {% elsif page.affiliation_list and page.affiliation_list.size > 0 %}
+                <div class="project-affiliation">
+                  <span class="affiliation-line">
+                    {% for aff in page.affiliation_list %}
+                    <span class="affiliation-item">{{ aff }}</span>
+                    {% endfor %}
+                  </span>
+                </div>
                 {% elsif page.affiliations_html %}<div class="project-affiliation">{{ page.affiliations_html }}</div>{% elsif page.affiliation %}<p class="project-affiliation">{{ page.affiliation }}</p>{% endif %}
+                {% if page.author_notes_markdown %}<div class="project-affiliation">{{ page.author_notes_markdown | markdownify }}</div>{% endif %}
+                {% endunless %}
                 {% if page.contact_email %}<p class="project-email">{{ page.contact_email }}</p>{% endif %}
 
                 <div class="project-links-grid">

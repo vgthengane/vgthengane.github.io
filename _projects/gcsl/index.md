@@ -9,13 +9,12 @@ number: 3
 
 year: 2024
 venue: "Arxiv 2024"
-author_entries:
-  - name: "Vishal Thengane"
-    highlight: true
-  - name: "Tammuz Dubnov"
+authors: |
+  <a class="project-author-home-link" href="{{ '/' | relative_url }}"><strong>Vishal Thengane</strong></a>,
+  Tammuz Dubnov
 contact_email: ""
 
-teaser_image: "/images/paper_teasers/gcsl.png"
+teaser_image: "/projects/gcsl/assets/teaser.png"
 tags:
   - Continual Learning
   - Catastrophic Forgetting

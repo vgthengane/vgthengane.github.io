@@ -9,16 +9,15 @@ number: 4
 
 year: 2025
 venue: "Arxiv 2025"
-author_entries:
-  - name: "Vishal Thengane"
-    highlight: true
-  - name: "Xiatian Zhu"
-  - name: "Salim Bouzerdoum"
-  - name: "Son Lam Phung"
-  - name: "Yunpeng Li"
+authors: |
+  <a class="project-author-home-link" href="{{ '/' | relative_url }}"><strong>Vishal Thengane</strong></a>,
+  Xiatian Zhu,
+  Salim Bouzerdoum,
+  Son Lam Phung,
+  Yunpeng Li
 contact_email: ""
 
-teaser_image: "/images/paper_teasers/fm3d_survey.png"
+teaser_image: "/projects/fm3d-survey/assets/teaser.png"
 tags:
   - 3D Foundation Models
   - Survey
