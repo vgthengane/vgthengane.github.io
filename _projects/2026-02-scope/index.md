@@ -15,11 +15,11 @@ authors:
   - "<a class='project-author-home-link' href='/'><strong>Vishal Thengane</strong></a><sup>1, 2</sup>"
   - "Zhaochong An<sup>3</sup>"
   - "Tianjin Huang<sup>4</sup>"
-  - "Son Lam Phung<sup>2</sup>"
-  - "Abdesselam Bouzerdoum<sup>2</sup>"
-  - "Lu Yin<sup>1</sup>"
-  - "Na Zhao<sup>5, †</sup>"
-  - "Xiatian Zhu<sup>1, †</sup>"
+  - "<a class='project-author-home-link' href='https://documents.uow.edu.au/~phung'>Son Lam Phung</a><sup>2</sup>"
+  - "<a class='project-author-home-link' href='https://scholars.uow.edu.au/a-bouzerdoum'>Abdesselam Bouzerdoum</a><sup>2</sup>"
+  - "<a class='project-author-home-link' href='https://luuyin.com/'>Lu Yin</a><sup>1</sup>"
+  - "<a class='project-author-home-link' href='https://na-z.github.io'>Na Zhao</a><sup>5, †</sup>"
+  - "<a class='project-author-home-link' href='https://x-up-lab.github.io/'>Xiatian Zhu</a><sup>1, †</sup>"
 
 affiliations:
   - "<sup>1</sup>University of Surrey, UK"

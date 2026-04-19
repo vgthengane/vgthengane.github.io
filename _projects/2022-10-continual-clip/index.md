@@ -11,9 +11,9 @@ year: 2023
 venue: "CVPR 2023"
 authors:
   - "<a class='project-author-home-link' href='/'><strong>Vishal Thengane</strong></a>"
-  - "Salman Khan"
+  - "<a class='project-author-home-link' href='https://salman-h-khan.github.io'>Salman Khan</a>"
   - "Munawar Hayat"
-  - "Fahad Khan"
+  - "<a class='project-author-home-link' href='https://scholar.google.com/citations?user=zvaeYnUAAAAJ&hl=en'>Fahad Khan</a>"
 contact_email: ""
 
 teaser_image: "/projects/2022-10-continual-clip/assets/teaser.png"

@@ -11,9 +11,9 @@ year: 2025
 venue: "Arxiv 2025"
 authors:
   - "<a class='project-author-home-link' href='/'><strong>Vishal Thengane</strong></a>"
-  - "Xiatian Zhu"
-  - "Salim Bouzerdoum"
-  - "Son Lam Phung"
+  - "<a class='project-author-home-link' href='https://x-up-lab.github.io/'>Xiatian Zhu</a>"
+  - "<a class='project-author-home-link' href='https://scholars.uow.edu.au/a-bouzerdoum'>Salim Bouzerdoum</a>"
+  - "<a class='project-author-home-link' href='https://documents.uow.edu.au/~phung'>Son Lam Phung</a>"
   - "Yunpeng Li"
 contact_email: ""
 

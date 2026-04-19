@@ -12,9 +12,15 @@ year: 2026
 venue: "CONFERENCE ABBR. YEAR"
 venue_long: "FULL CONFERENCE OR JOURNAL NAME"
 authors:
-  - "<a class='project-author-home-link' href='/'><strong>AUTHOR_1</strong></a><sup>1,2*</sup>"
-  - "AUTHOR_2<sup>1*</sup>"
-  - "AUTHOR_3<sup>2†</sup>"
+  - name: "AUTHOR_1"
+    affiliations: [1, 2]
+    url: "/"
+    highlight: true
+  - name: "AUTHOR_2"
+    affiliations: [1]
+    # url: "https://author2-homepage.example"
+  - name: "AUTHOR_3"
+    affiliations: [2]
 
 affiliations:
   - "<sup>1</sup>UNIVERSITY_OR_LAB_1"
@@ -22,6 +28,11 @@ affiliations:
 
 # Optional extra author note line (shown under affiliations):
 # author_notes_markdown: "<sup>*</sup>Equal contribution. <sup>†</sup>Corresponding author: your_email@domain.com"
+
+# Simple string list is also supported if you prefer:
+# authors:
+#   - "<a class='project-author-home-link' href='/'><strong>AUTHOR_1</strong></a><sup>1,2*</sup>"
+#   - "AUTHOR_2<sup>1*</sup>"
 
 # Optional legacy fields (use only if needed):
 # author_block_markdown / authors_markdown / author_notes_markdown still supported.

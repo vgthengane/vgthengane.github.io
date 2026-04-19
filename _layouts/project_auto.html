@@ -27,7 +27,15 @@ layout: compress
                 <div class="project-authors">
                   <span class="author-line">
                     {% for author in page.authors %}
-                    <span class="author-item">{{ author }}</span>
+                    <span class="author-item">
+                      {% if author.name %}
+                        {% assign author_name = author.name %}
+                        {% if author.highlight %}{% assign author_name = '<strong>' | append: author_name | append: '</strong>' %}{% endif %}
+                        {% if author.url and author.url != '' %}<a class="project-author-home-link" href="{{ author.url }}">{{ author_name }}</a>{% else %}{{ author_name }}{% endif %}{% if author.affiliations and author.affiliations.size > 0 %}<sup>{{ author.affiliations | join: ", " }}</sup>{% endif %}
+                      {% else %}
+                        {{ author }}
+                      {% endif %}
+                    </span>
                     {% endfor %}
                   </span>
                 </div>

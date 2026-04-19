@@ -16,13 +16,22 @@
 {% else %}
 {% assign authors_json = include.authors | jsonify %}
 {% if include.authors and authors_json contains '[' %}
-{% for author in include.authors %}{% if forloop.first == false %}, {% endif %}{% assign author_plain = author | split: '<sup' | first | strip_html | strip %}{% if author_plain == 'Vishal Thengane' %}<strong>{{ author_plain }}</strong>{% else %}{{ author_plain }}{% endif %}{% endfor %}
+{% for author in include.authors %}
+{% if forloop.first == false %}, {% endif %}
+{% if author.name %}
+{% assign author_plain = author.name | strip %}
+{% if author.highlight or author_plain == 'Vishal Thengane' %}<strong>{{ author_plain }}</strong>{% else %}{{ author_plain }}{% endif %}
+{% else %}
+{% assign author_plain = author | split: '<sup' | first | strip_html | strip %}
+{% if author_plain == 'Vishal Thengane' %}<strong>{{ author_plain }}</strong>{% else %}{{ author_plain }}{% endif %}
+{% endif %}
+{% endfor %}
 {% else %}
 {{ include.authors | strip_html | strip | replace: 'Vishal Thengane', '<strong>Vishal Thengane</strong>' }}
 {% endif %}
 {% endif %}
 {% endcapture %}
-{{ authors_text | strip }}
+<p class="paper-authors">{{ authors_text | strip | strip_newlines | replace: '  ', ' ' }}</p>
 
 {% if include.citation %}
 <strong><span class='show_paper_citations' data='{{ include.citation }}'></span></strong>

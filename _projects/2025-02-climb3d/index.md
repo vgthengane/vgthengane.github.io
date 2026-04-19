@@ -15,9 +15,9 @@ authors:
   - "Jean Lahoud<sup>1</sup>"
   - "Hisham Cholakkal<sup>2</sup>"
   - "Rao Muhammad Anwer<sup>2</sup>"
-  - "Lu Yin<sup>1</sup>"
-  - "Xiatian Zhu<sup>1</sup>"
-  - "Salman Khan<sup>2, 3</sup>"
+  - "<a class='project-author-home-link' href='https://luuyin.com/'>Lu Yin</a><sup>1</sup>"
+  - "<a class='project-author-home-link' href='https://x-up-lab.github.io/'>Xiatian Zhu</a><sup>1</sup>"
+  - "<a class='project-author-home-link' href='https://salman-h-khan.github.io'>Salman Khan</a><sup>2, 3</sup>"
 
 affiliations:
   - "<sup>1</sup>University of Surrey, UK"
