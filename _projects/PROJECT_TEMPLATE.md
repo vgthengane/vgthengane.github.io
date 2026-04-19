@@ -47,6 +47,20 @@ short_intro: "2-3 sentence short intro shown in Publications page."
 abstract: "3-5 sentence abstract describing the problem, setup, and key contribution."
 method: "Briefly explain the method, model design, and training strategy."
 results: "Summarize key quantitative/qualitative results and important takeaways."
+
+# Method and results accept Markdown (use this format for images, lists, equations, etc.):
+# method: |
+#   Brief method summary.
+#
+#   ![](/images/paper_teasers/PROJECT_IMAGE.png)
+#
+#   - Step 1
+#   - Step 2
+#
+# results: |
+#   Key findings:
+#   - +2.3 mAP on split A
+#   - +1.1 mAP on split B
 bibtex: |
   @inproceedings{key,
     title={PROJECT_NAME},

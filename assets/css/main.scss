@@ -601,6 +601,17 @@ h1:before, .anchor:before {
     border: 0;
     box-shadow: 0 10px 22px rgba(24, 34, 45, 0.06);
   }
+
+  figcaption {
+    display: block;
+    margin-top: 0.45rem;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1em;
+    color: mix($text-color, $heading-color, 78%);
+    line-height: 1.45;
+  }
 }
 
 .project-keywords-row {
@@ -778,10 +789,10 @@ h1:before, .anchor:before {
     text-justify: inter-word;
   }
 
-  p.project-abstract,
-  p.project-method,
-  p.project-results,
-  p.project-keywords {
+  .project-abstract,
+  .project-method,
+  .project-results,
+  .project-keywords {
     text-align: justify;
     text-justify: inter-word;
   }

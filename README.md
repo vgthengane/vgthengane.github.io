@@ -80,4 +80,9 @@ Quick troubleshooting:
 
 ## License
 
-This website is open source and based on [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io), released under the [MIT License](LICENSE).
+This website is open source under the [MIT License](LICENSE).
+
+It is adapted from [AcadHomepage by RayeRen](https://github.com/RayeRen/acad-homepage.github.io) with substantial structural and content changes.
+
+Original copyright: Yi Ren.
+Modifications in this repository: Vishal Thengane.

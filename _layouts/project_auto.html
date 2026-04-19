@@ -53,12 +53,6 @@ layout: compress
                 </div>
               </div>
 
-              {% if page.teaser_image %}
-              <figure class="project-cover">
-                <img src="{{ page.teaser_image | relative_url }}" alt="{{ page.title }} teaser">
-              </figure>
-              {% endif %}
-
               {% if page.tags and page.tags.size > 0 %}
               <span class="project-tags">
                 {% for tag in page.tags %}
@@ -68,24 +62,25 @@ layout: compress
               {% endif %}
             </div>
 
-            {% if page.abstract %}
+            {% assign abstract_content = page.abstract_markdown | default: page.abstract %}
+            {% if abstract_content %}
             <section class="project-section">
               <h2>Abstract</h2>
-              <p class="project-abstract">{{ page.abstract }}</p>
+              <div class="project-abstract">{{ abstract_content | markdownify }}</div>
             </section>
             {% endif %}
 
             {% if page.method %}
             <section class="project-section">
               <h2>Method</h2>
-              <p class="project-method">{{ page.method }}</p>
+              <div class="project-method">{{ page.method | markdownify }}</div>
             </section>
             {% endif %}
 
             {% if page.results %}
             <section class="project-section">
               <h2>Results</h2>
-              <p class="project-results">{{ page.results }}</p>
+              <div class="project-results">{{ page.results | markdownify }}</div>
             </section>
             {% endif %}
 
