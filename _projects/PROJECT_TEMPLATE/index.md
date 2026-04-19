@@ -12,7 +12,7 @@ year: 2026
 venue: "CONFERENCE ABBR. YEAR"
 venue_long: "FULL CONFERENCE OR JOURNAL NAME"
 authors:
-  - "<a class='project-author-home-link' href='{{ '/' | relative_url }}'><strong>AUTHOR_1</strong></a><sup>1,2*</sup>"
+  - "<a class='project-author-home-link' href='/'><strong>AUTHOR_1</strong></a><sup>1,2*</sup>"
   - "AUTHOR_2<sup>1*</sup>"
   - "AUTHOR_3<sup>2†</sup>"
 
@@ -30,7 +30,7 @@ affiliations:
 # author_notes_markdown: "<sup>*</sup>Equal contribution. <sup>†</sup>Corresponding author."
 contact_email: "your_email@domain.com"
 
-teaser_image: "/projects/PROJECT_SLUG/assets/teaser.png"
+teaser_image: "/projects/YYYY-MM-PROJECT_SLUG/assets/teaser.png"
 tags:
   - Tag 1
   - Tag 2
@@ -44,18 +44,18 @@ code_url: "https://github.com/owner/repo"
 short_intro: "2-3 sentence short intro shown in Publications page."
 
 # Folder-based project structure (recommended):
-# - _projects/PROJECT_SLUG/index.md
-# - _projects/PROJECT_SLUG/assets/method.png
-# - _projects/PROJECT_SLUG/assets/results_qualitative.png
+# - _projects/YYYY-MM-PROJECT_SLUG/index.md
+# - _projects/YYYY-MM-PROJECT_SLUG/assets/method.png
+# - _projects/YYYY-MM-PROJECT_SLUG/assets/results_qualitative.png
 #
 # In markdown fields below, reference project-local assets with:
-# ![](/projects/PROJECT_SLUG/assets/method.png)
+# ![](/projects/YYYY-MM-PROJECT_SLUG/assets/method.png)
 
 abstract: "3-5 sentence abstract describing the problem, setup, and key contribution."
 method: |
   Briefly explain the method, model design, and training strategy.
 
-  ![](/projects/PROJECT_SLUG/assets/method.png)
+  ![](/projects/YYYY-MM-PROJECT_SLUG/assets/method.png)
 
   Example equation:
 
@@ -68,7 +68,7 @@ method: |
 results: |
   Summarize key quantitative/qualitative results and important takeaways.
 
-  ![](/projects/PROJECT_SLUG/assets/results_qualitative.png)
+  ![](/projects/YYYY-MM-PROJECT_SLUG/assets/results_qualitative.png)
 
   - +X.X metric on split A
   - +Y.Y metric on split B
@@ -84,6 +84,7 @@ bibtex: |
     booktitle={CONFERENCE_YEAR},
     year={YEAR}
   }
+
 ---
 
 Add optional extra markdown content below this line if needed.

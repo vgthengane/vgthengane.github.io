@@ -11,7 +11,7 @@ year: 2025
 venue: "BMVC 2025"
 venue_long: "British Machine Vision Conference (BMVC) 2025"
 authors:
-  - "<a class='project-author-home-link' href='{{ '/' | relative_url }}'><strong>Vishal Thengane</strong></a><sup>1, 2</sup>"
+  - "<a class='project-author-home-link' href='/'><strong>Vishal Thengane</strong></a><sup>1, 2</sup>"
   - "Jean Lahoud<sup>1</sup>"
   - "Hisham Cholakkal<sup>2</sup>"
   - "Rao Muhammad Anwer<sup>2</sup>"
@@ -26,7 +26,7 @@ affiliations:
   
 contact_email: "vgthengane (at) gmail (dot) com"
 
-teaser_image: "/projects/climb3d/assets/teaser.png"
+teaser_image: "/projects/2025-02-climb3d/assets/teaser.png"
 # tags:
 #   - Continual Learning
 #   - 3D Vision
@@ -44,7 +44,7 @@ abstract: "While 3D instance segmentation (3DIS) has advanced significantly, mos
 method: |
   CLIMB-3D extends class-incremental 3D instance segmentation with imbalance-aware learning.
 
-  ![](/projects/climb3d/assets/teaser.png)
+  ![](/projects/2025-02-climb3d/assets/teaser.png)
 
   Core components:
 

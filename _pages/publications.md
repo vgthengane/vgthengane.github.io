@@ -6,7 +6,7 @@ A full publication list is available on my [Google Scholar](https://scholar.goog
 
 ## Publications
 
-{% assign publication_projects = listed_projects | where: "publication_section", "publication" | sort: "number" | reverse %}
+{% assign publication_projects = listed_projects | where: "publication_section", "publication" | sort: "path" | reverse %}
 {% for project in publication_projects %}
 {% if project.paper_url and project.paper_url != "" %}
 {% assign project_link = "" %}
@@ -32,7 +32,7 @@ description=project.short_intro
 
 ## Pre-prints
 
-{% assign preprint_projects = listed_projects | where: "publication_section", "preprint" | sort: "number" | reverse %}
+{% assign preprint_projects = listed_projects | where: "publication_section", "preprint" | sort: "path" | reverse %}
 {% for project in preprint_projects %}
 {% if project.paper_url and project.paper_url != "" %}
 {% assign project_link = "" %}

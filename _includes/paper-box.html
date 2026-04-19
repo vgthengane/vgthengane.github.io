@@ -14,7 +14,12 @@
 {% if include.author_entries and include.author_entries.size > 0 %}
 {% for author in include.author_entries %}{% if forloop.first == false %}, {% endif %}{% if author.highlight %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% endfor %}
 {% else %}
-{{ include.authors }}
+{% assign authors_json = include.authors | jsonify %}
+{% if include.authors and authors_json contains '[' %}
+{% for author in include.authors %}{% if forloop.first == false %}, {% endif %}{% assign author_plain = author | split: '<sup' | first | strip_html | strip %}{% if author_plain == 'Vishal Thengane' %}<strong>{{ author_plain }}</strong>{% else %}{{ author_plain }}{% endif %}{% endfor %}
+{% else %}
+{{ include.authors | strip_html | strip | replace: 'Vishal Thengane', '<strong>Vishal Thengane</strong>' }}
+{% endif %}
 {% endif %}
 {% endcapture %}
 {{ authors_text | strip }}

@@ -12,7 +12,7 @@ year: 2026
 venue: "CVPR 2026"
 venue_long: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Findings 2026"
 authors:
-  - "<a class='project-author-home-link' href='{{ '/' | relative_url }}'><strong>Vishal Thengane</strong></a><sup>1, 2</sup>"
+  - "<a class='project-author-home-link' href='/'><strong>Vishal Thengane</strong></a><sup>1, 2</sup>"
   - "Zhaochong An<sup>3</sup>"
   - "Tianjin Huang<sup>4</sup>"
   - "Son Lam Phung<sup>2</sup>"
@@ -30,7 +30,7 @@ affiliations:
 author_notes_markdown: "<sup>†</sup>Corresponding authors."
 contact_email: "vgthengane (at) gmail (dot) com"
 
-teaser_image: "/projects/scope/assets/teaser.png"
+teaser_image: "/projects/2026-02-scope/assets/teaser.png"
 # tags:
 #   - Few-shot learning
 #   - Continual learning
@@ -47,7 +47,7 @@ abstract: "Incremental Few-Shot (IFS) segmentation aims to learn new categories 
 method: |
   SCOPE is a plug-and-play **background-guided prototype enrichment** framework for incremental few-shot 3D segmentation.
 
-  ![](/projects/scope/assets/teaser.png)
+  ![](/projects/2026-02-scope/assets/teaser.png)
 
   Pipeline overview:
 

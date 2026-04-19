@@ -9,15 +9,15 @@ number: 4
 
 year: 2025
 venue: "Arxiv 2025"
-authors: |
-  <a class="project-author-home-link" href="{{ '/' | relative_url }}"><strong>Vishal Thengane</strong></a>,
-  Xiatian Zhu,
-  Salim Bouzerdoum,
-  Son Lam Phung,
-  Yunpeng Li
+authors:
+  - "<a class='project-author-home-link' href='/'><strong>Vishal Thengane</strong></a>"
+  - "Xiatian Zhu"
+  - "Salim Bouzerdoum"
+  - "Son Lam Phung"
+  - "Yunpeng Li"
 contact_email: ""
 
-teaser_image: "/projects/fm3d-survey/assets/teaser.png"
+teaser_image: "/projects/2025-01-fm3d-survey/assets/teaser.png"
 tags:
   - 3D Foundation Models
   - Survey
