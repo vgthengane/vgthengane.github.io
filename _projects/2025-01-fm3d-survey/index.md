@@ -24,8 +24,8 @@ tags:
 
 paper_url: "https://arxiv.org/abs/2501.18594"
 arxiv_url: "https://arxiv.org/abs/2501.18594"
-youtube_url: ""
 code_url: "https://github.com/vgthengane/Awesome-FMs-in-3D"
+youtube_url: ""
 
 short_intro: "This paper surveys recent advances in foundation models for 3D point cloud understanding, focusing on how 2D and language-based pretrained models help overcome challenges like limited labelled data and high computational costs. It reviews strategies for building 3D FMs, their application across core 3D tasks, and highlights future research directions."
 

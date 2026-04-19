@@ -26,8 +26,8 @@ tags:
 
 paper_url: "https://link.springer.com/chapter/10.1007/978-3-031-25056-9_10"
 arxiv_url: "https://arxiv.org/abs/2210.04143"
-youtube_url: ""
 code_url: "https://github.com/kuanweih/strong_lensing_vit_resnet"
+youtube_url: ""
 
 short_intro: "We explore Vision Transformers (ViTs) for estimating parameters in simulated lensed quasar systems-offering a fast, competitive alternative to MCMC and CNNs. ViTs perform well on mass-related lensing parameters, showing promise for future lensing analyses."
 

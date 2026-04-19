@@ -21,8 +21,8 @@ tags:
 
 paper_url: "https://arxiv.org/abs/2403.02334"
 arxiv_url: "https://arxiv.org/abs/2403.02334"
-youtube_url: ""
 code_url: "https://github.com/vgthengane/GCSL"
+youtube_url: ""
 
 short_intro: "This paper proposes Gradient Correlation Subspace Learning (GCSL) to address catastrophic forgetting in incremental class learning. GCSL identifies and preserves weight subspaces least affected by prior tasks, projecting new task updates into them, and can be flexibly applied across network layers and tasks."
 

@@ -12,15 +12,9 @@ year: 2026
 venue: "CONFERENCE ABBR. YEAR"
 venue_long: "FULL CONFERENCE OR JOURNAL NAME"
 authors:
-  - name: "AUTHOR_1"
-    affiliations: [1, 2]
-    url: "/"
-    highlight: true
-  - name: "AUTHOR_2"
-    affiliations: [1]
-    # url: "https://author2-homepage.example"
-  - name: "AUTHOR_3"
-    affiliations: [2]
+  - "<a class='project-author-home-link' href='/'><strong>AUTHOR_1</strong></a><sup>1, 2</sup>"
+  - "AUTHOR_2<sup>1</sup>"
+  - "AUTHOR_3<sup>2</sup>"
 
 affiliations:
   - "<sup>1</sup>UNIVERSITY_OR_LAB_1"
@@ -29,16 +23,7 @@ affiliations:
 # Optional extra author note line (shown under affiliations):
 # author_notes_markdown: "<sup>*</sup>Equal contribution. <sup>†</sup>Corresponding author: your_email@domain.com"
 
-# Simple string list is also supported if you prefer:
-# authors:
-#   - "<a class='project-author-home-link' href='/'><strong>AUTHOR_1</strong></a><sup>1,2*</sup>"
-#   - "AUTHOR_2<sup>1*</sup>"
-
-# Optional legacy fields (use only if needed):
-# author_block_markdown / authors_markdown / author_notes_markdown still supported.
-# You can keep using author_entries/affiliation_entries if you prefer structured YAML.
-# authors / affiliations also accept markdown block strings.
-# author_notes_markdown: "<sup>*</sup>Equal contribution. <sup>†</sup>Corresponding author."
+# If you prefer richer author metadata, you can use author objects or markdown blocks.
 contact_email: "your_email@domain.com"
 
 teaser_image: "/projects/YYYY-MM-PROJECT_SLUG/assets/teaser.png"
@@ -49,8 +34,8 @@ tags:
 
 paper_url: "https://arxiv.org/abs/xxxx.xxxxx"
 arxiv_url: "https://arxiv.org/abs/xxxx.xxxxx"
-youtube_url: "https://youtube.com/..."
 code_url: "https://github.com/owner/repo"
+youtube_url: "https://youtube.com/..."
 
 short_intro: "2-3 sentence short intro shown in Publications page."
 
